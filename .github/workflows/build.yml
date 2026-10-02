@@ -162,6 +162,7 @@ jobs:
           npx cap sync android
           VER=$(node -p "require('./package.json').version")
           cd android
+          chmod +x gradlew
           if [ -n "$KEYSTORE_B64" ]; then
             echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/bh.jks"
             export BH_KEYSTORE="$RUNNER_TEMP/bh.jks"
