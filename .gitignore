@@ -1,0 +1,99 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# Debug information files
+*.dwo
+
+# Build outputs
+build/
+build_host/
+
+# rt950_sat.py default output folder
+rt950_sat_out/
+
+# Analysis directory (proprietary firmware - do not commit)
+.analysis/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Radare2 project files
+assembly/.r2*
+
+# NFS temp files
+.nfs*
+
+# Editor temp files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# PyInstaller output
+pc/dist/
+
+# generated at build time
+pc/packaging/windows/version_info.txt
+site/firmware/
+site/help/
+site/app/
+site/codeplugs/
+
+# signing keys never go in the repo
+*.pfx
+*.p12
+*.jks
+*.keystore
+passwords*.txt

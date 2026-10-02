@@ -1,0 +1,354 @@
+ident,type,name,latitude_deg,longitude_deg,iso_country,iso_region,municipality,scheduled_service,icao_code,iata_code
+EG74,small_airport,Bruntingthorpe Aerodrome,52.492972,-1.12509,GB,GB-ENG,"Lutterworth, Leicestershire",no,,
+EGAA,large_airport,Belfast International Airport,54.6575012207,-6.2158298492399995,GB,GB-NIR,Belfast,yes,EGAA,BFS
+EGAB,medium_airport,Enniskillen/St Angelo Airport,54.398274,-7.651179,GB,GB-NIR,"Enniskillen, Fermanagh and Omagh",no,EGAB,ENK
+EGAC,medium_airport,George Best Belfast City Airport,54.618099,-5.8725,GB,GB-NIR,Belfast,yes,EGAC,BHD
+EGAD,small_airport,Newtownards Airport,54.5811,-5.69194,GB,GB-NIR,"Newtownards, Ards and North Down",no,EGAD,
+EGAE,medium_airport,City of Derry Airport,55.042801,-7.16111,GB,GB-NIR,"Derry, Derry and Strabane",yes,EGAE,LDY
+EGBB,large_airport,Birmingham Airport,52.453899,-1.74803,GB,GB-ENG,"Birmingham, West Midlands",yes,EGBB,BHX
+EGBD,small_airport,Derby Airfield,52.859699,-1.6175,GB,GB-ENG,"Derby, Derbyshire",no,EGBD,
+EGBF,small_airport,Bedford Aerodrome,52.23071,-0.463825,GB,GB-ENG,"Bedford, Bedford",no,EGBF,
+EGBG,small_airport,Leicester Airport,52.606574,-1.030226,GB,GB-ENG,"Leicester, Leicestershire",no,EGBG,
+EGBJ,medium_airport,Gloucestershire Airport,51.894199,-2.16722,GB,GB-ENG,"Staverton, Gloucestershire",no,EGBJ,GLO
+EGBK,small_airport,Sywell Aerodrome,52.305302,-0.793056,GB,GB-ENG,"Northampton, Northamptonshire",no,EGBK,ORM
+EGBM,small_airport,Tatenhill Airfield,52.81431,-1.767942,GB,GB-ENG,"Burton upon Trent, Staffordshire",no,EGBM,
+EGBN,medium_airport,Nottingham City Airport,52.919998,-1.07917,GB,GB-ENG,"Nottingham, Nottinghamshire",no,EGBN,NQT
+EGBO,small_airport,Wolverhampton Halfpenny Green Airport,52.517502,-2.25944,GB,GB-ENG,"Wolverhampton, Staffordshire",no,EGBO,
+EGBP,small_airport,Cotswold Airport,51.668528,-2.056599,GB,GB-ENG,"Cirencester, Gloucestershire",no,EGBP,GBA
+EGBS,small_airport,Shobdon Airfield,52.241699,-2.88111,GB,GB-ENG,"Leominster, Herefordshire",no,,
+EGBT,small_airport,Turweston Aerodrome,52.040798,-1.09556,GB,GB-ENG,Turweston,no,EGBT,
+EGBW,small_airport,Wellesbourne Mountford Airfield,52.189353,-1.614089,GB,GB-ENG,"Warwick, Warwickshire",no,,
+EGCB,small_airport,Manchester Barton Aerodrome,53.471699,-2.38972,GB,GB-ENG,"Manchester, Greater Manchester",no,,
+EGCC,large_airport,Manchester Airport,53.349375,-2.279521,GB,GB-ENG,"Manchester, Greater Manchester",yes,EGCC,MAN
+EGCF,small_airport,Sandtoft Airfield,53.559358,-0.859043,GB,GB-ENG,"Doncaster, South Yorkshire",no,,
+EGCJ,small_airport,Sherburn-in-Elmet Airfield,53.788458,-1.216877,GB,GB-ENG,"Selby, North Yorkshire",no,EGCJ,
+EGCK,small_airport,Caernarfon Airport,53.101819,-4.337614,GB,GB-WLS,Caernarfon,no,,
+EGCL,small_airport,Fenland Airfield,52.739201,-0.029722,GB,GB-ENG,"Spalding, Lincolnshire",no,,
+EGCS,small_airport,Sturgate Airfield,53.381242,-0.6848,GB,GB-ENG,"Gainsborough, Lincolnshire",no,EGCS,
+EGCT,small_airport,Tilstock Airfield,52.932363,-2.647435,GB,GB-ENG,"Whitchurch, Shropshire",no,,
+EGCV,small_airport,Sleap Airfield,52.834809,-2.770312,GB,GB-ENG,"Shrewsbury, Shropshire",no,,
+EGCW,small_airport,Welshpool Airport,52.628601,-3.15333,GB,GB-WLS,"Welshpool, Powys",no,,
+EGDC,medium_airport,Royal Marines Base Chivenor,51.0872,-4.15034,GB,GB-ENG,Chivenor,no,,
+EGDJ,small_airport,Upavon Aerodrome,51.28657,-1.782239,GB,GB-ENG,"Pewsey, Wiltshire",no,EGDJ,UPV
+EGDM,medium_airport,MoD Boscombe Down,51.152199,-1.74741,GB,GB-ENG,"Salisbury, Wiltshire",no,,
+EGDN,small_airport,Netheravon Airfield,51.2472,-1.75425,GB,GB-ENG,"Salisbury, Wiltshire",no,,
+EGDO,small_airport,Predannack Airfield,50.001202,-5.23083,GB,GB-ENG,"Predannack Wollas, Cornwall",no,,
+EGDR,medium_airport,RNAS Culdrose,50.08610153198242,-5.255710124969482,GB,GB-ENG,Helston,no,,
+EGDX,medium_airport,MOD St Athan,51.405229,-3.433254,GB,GB-WLS,"St Athan, Vale of Glamorgan",no,EGSY,
+EGDY,medium_airport,RNAS Yeovilton,51.009399,-2.63882,GB,GB-ENG,"Yeovil, Somerset",no,EGDY,YEO
+EGEC,medium_airport,Campbeltown Airport,55.437199,-5.68639,GB,GB-SCT,Campbeltown,yes,EGEC,CAL
+EGEF,small_airport,Fair Isle Airport,59.534721,-1.628509,GB,GB-SCT,Fair Isle,yes,EGEF,FIE
+EGEL,small_airport,Coll Airport,56.601898,-6.61778,GB,GB-SCT,Coll Island,yes,EGEL,COL
+EGEN,small_airport,North Ronaldsay Airport,59.3675003052,-2.43443989754,GB,GB-SCT,North Ronaldsay,yes,EGEN,NRL
+EGEO,small_airport,Oban Airport,56.463501,-5.39967,GB,GB-SCT,North Connel,yes,EGEO,OBN
+EGET,small_airport,Lerwick / Tingwall Airport,60.1922,-1.24361,GB,GB-SCT,"Lerwick, Shetland Islands",yes,EGET,LWK
+EGEW,small_airport,Westray Airport,59.350475,-2.950062,GB,GB-SCT,"Westray, Orkney Islands",yes,EGEW,WRY
+EGEY,small_airport,Colonsay Airstrip,56.057499,-6.24306,GB,GB-SCT,Colonsay,yes,EGEY,CSA
+EGFA,small_airport,Aberporth Airport,52.1152992249,-4.556940078739999,GB,GB-WLS,Aberporth,no,,
+EGFD,small_airport,Llanbedr Airfield,52.811699,-4.12358,GB,GB-WLS,Llanbedr,no,,
+EGFE,medium_airport,Haverfordwest Airport,51.833099365234375,-4.9611101150512695,GB,GB-WLS,Haverfordwest,no,EGFE,HAW
+EGFF,large_airport,Cardiff International Airport,51.396702,-3.34333,GB,GB-WLS,Cardiff,yes,EGFF,CWL
+EGFH,medium_airport,Swansea Airport,51.601366,-4.071006,GB,GB-WLS,Swansea,no,EGFH,SWS
+EGFP,small_airport,Pembrey West Wales Airport,51.713902,-4.31222,GB,GB-WLS,"Pembrey, Carmarthenshire",no,,
+EGGD,large_airport,Bristol Airport,51.382326,-2.716453,GB,GB-ENG,Bristol,yes,EGGD,BRS
+EGGP,large_airport,Liverpool John Lennon Airport,53.334863,-2.849637,GB,GB-ENG,Liverpool,yes,EGGP,LPL
+EGGW,large_airport,London Luton Airport,51.874699,-0.368333,GB,GB-ENG,"Luton, Luton",yes,EGGW,LTN
+EGHA,small_airport,Compton Abbas Aerodrome,50.967201,-2.15361,GB,GB-ENG,"Shaftesbury, Dorset",no,,
+EGHC,small_airport,Land's End Airport,50.102798,-5.67056,GB,GB-ENG,"Land's End, Cornwall",yes,EGHC,LEQ
+EGHE,small_airport,St. Mary's Airport,49.913375,-6.291894,GB,GB-ENG,"St. Mary's, Isles of Scilly",yes,EGHE,ISC
+EGHF,small_airport,Solent Airport,50.814201,-1.20333,GB,GB-ENG,"Gosport, Hampshire",no,,
+EGHG,small_airport,Yeovil/Westland Aerodrome,50.939999,-2.65861,GB,GB-ENG,"Yeovil, Somerset",no,,
+EGHH,medium_airport,Bournemouth Airport,50.780483,-1.839576,GB,GB-ENG,Bournemouth,yes,EGHH,BOH
+EGHI,medium_airport,Southampton Airport,50.950298,-1.3568,GB,GB-ENG,Southampton,yes,EGHI,SOU
+EGHJ,small_airport,Bembridge Airport,50.678101,-1.10944,GB,GB-ENG,"Bembridge, Isle of Wight",no,EGHJ,BBP
+EGHL,medium_airport,Lasham Airfield,51.18744,-1.031663,GB,GB-ENG,"Alton, Hampshire",no,EGHL,
+EGHN,small_airport,Isle of Wight/Sandown Airport,50.653099,-1.18222,GB,GB-ENG,"Sandown, Isle of Wight",no,,
+EGHO,small_airport,Thruxton Aerodrome,51.210602,-1.6,GB,GB-ENG,"Andover, Hampshire",no,,
+EGHP,small_airport,Popham Airfield,51.194688,-1.233071,GB,GB-ENG,"Winchester, Hampshire",no,,
+EGHQ,medium_airport,Cornwall Airport Newquay,50.440601,-4.99541,GB,GB-ENG,Newquay,yes,EGHQ,NQY
+EGHR,small_airport,Goodwood Aerodrome,50.859832,-0.760073,GB,GB-ENG,"Chichester, West Sussex",no,EGHR,QUG
+EGHS,small_airport,Henstridge Airfield,50.985001,-2.35722,GB,GB-ENG,"Templecombe, Somerset",no,,
+EGHU,small_airport,Eaglescott Airfield,50.928651,-3.988446,GB,GB-ENG,"Umberleigh, Devon",no,,
+EGHY,small_airport,Truro Aerodrome,50.2784,-5.14229,GB,GB-ENG,Truro,no,,
+EGJA,medium_airport,Alderney Airport,49.706104,-2.21472,GG,GG-A,Saint Anne,yes,EGJA,ACI
+EGJB,medium_airport,Guernsey Airport,49.435001,-2.60197,GG,GG-G,Saint Peter Port,yes,EGJB,GCI
+EGJJ,medium_airport,Jersey Airport,49.207901,-2.19551,JE,JE-U-A,St. Peter,yes,EGJJ,JER
+EGKA,medium_airport,Brighton City Airport,50.835602,-0.297222,GB,GB-ENG,"Brighton, East Sussex",no,EGKA,ESH
+EGKB,medium_airport,London Biggin Hill Airport,51.33079910279999,0.0324999988079,GB,GB-ENG,London,no,EGKB,BQH
+EGKH,small_airport,Headcorn Aerodrome,51.156898,0.641667,GB,GB-ENG,"Ashford, Kent",no,,
+EGKK,large_airport,London Gatwick Airport,51.148744,-0.185739,GB,GB-ENG,London,yes,EGKK,LGW
+EGKL,small_airport,Deanland Lewes Airfield,50.881093,0.154345,GB,GB-ENG,"Lewes, East Sussex",no,,
+EGKR,small_airport,Redhill Aerodrome,51.2136,-0.138611,GB,GB-ENG,"Redhill, Surrey",no,EGKR,
+EGLA,small_airport,Bodmin Airfield,50.499698638916016,-4.665830135345459,GB,GB-ENG,Bodmin,no,,
+EGLC,medium_airport,London City Airport,51.505299,0.055278,GB,GB-ENG,London,yes,EGLC,LCY
+EGLD,small_airport,Denham Aerodrome,51.588299,-0.513056,GB,GB-ENG,"Uxbridge, Greater London",no,,
+EGLF,medium_airport,Farnborough Airport,51.275799,-0.776333,GB,GB-ENG,"Farnborough, Hampshire",no,EGLF,FAB
+EGLJ,small_airport,Chalgrove Airfield,51.676102,-1.08083,GB,GB-ENG,"Oxford, Oxfordshire",no,,
+EGLK,medium_airport,Blackbushe Airport,51.323898,-0.8475,GB,GB-ENG,"Camberley, Surrey",no,EGLK,BBS
+EGLL,large_airport,London Heathrow Airport,51.470748,-0.459909,GB,GB-ENG,London,yes,EGLL,LHR
+EGLM,small_airport,White Waltham Airfield,51.500801,-0.774444,GB,GB-ENG,"Maidenhead, Berkshire",no,,
+EGLP,small_airport,Brimpton Airfield,51.383456,-1.172096,GB,GB-ENG,"Reading, Berkshire",no,,
+EGLS,small_airport,Old Sarum Airfield,51.0989,-1.78417,GB,GB-ENG,"Salisbury, Wiltshire",no,,
+EGMA,small_airport,Fowlmere Airfield,52.077499,0.061667,GB,GB-ENG,"Fowlmere, Cambridgeshire",no,EGMA,
+EGMC,medium_airport,London Southend Airport,51.570562,0.693627,GB,GB-ENG,"Southend-on-Sea, Essex",yes,EGMC,SEN
+EGMD,medium_airport,Lydd London Ashford Airport,50.956246,0.939074,GB,GB-ENG,"Romney Marsh, Kent",no,EGMD,LYX
+EGMJ,small_airport,Little Gransden Airfield,52.165977,-0.149222,GB,GB-ENG,"Gamlingay, Cambridgeshire",no,EGMJ,
+EGNC,medium_airport,Carlisle Lake District Airport,54.9375,-2.80917,GB,GB-ENG,"Carlisle, Cumbria",no,EGNC,CAX
+EGNE,small_airport,Retford Gamston Airport,53.280602,-0.951389,GB,GB-ENG,"Retford, Nottinghamshire",no,EGNE,
+EGNF,small_airport,Netherthorpe Airfield,53.317182,-1.195573,GB,GB-ENG,"Worksop, Nottinghamshire",no,EGNF,
+EGNG,small_airport,Bagby Thirsk Airfield,54.211226,-1.292417,GB,GB-ENG,"Thirsk, North Yorkshire",no,,
+EGNH,medium_airport,Blackpool Airport,53.771702,-3.02861,GB,GB-ENG,Blackpool,no,EGNH,BLK
+EGNI,small_airport,Skegness (Ingoldmells) Aerodrome,53.1716,0.329375,GB,GB-ENG,"Skegness, Lincolnshire",no,,
+EGNJ,medium_airport,Humberside Airport,53.576152,-0.34954,GB,GB-ENG,"Grimsby, Lincolnshire",yes,EGNJ,HUY
+EGNL,medium_airport,Barrow Walney Island Airport,54.1286111,-3.2675,GB,GB-ENG,Barrow-in-Furness,no,EGNL,BWF
+EGNM,large_airport,Leeds Bradford Airport,53.865898,-1.66057,GB,GB-ENG,"Leeds, West Yorkshire",yes,EGNM,LBA
+EGNO,medium_airport,Warton Aerodrome,53.745098,-2.88306,GB,GB-ENG,Warton,no,EGNO,WRT
+EGNR,medium_airport,Hawarden Airport,53.178101,-2.97778,GB,GB-WLS,Broughton,no,EGNR,CEG
+EGNS,large_airport,Isle of Man Airport,54.083081,-4.623871,IM,IM-U-A,"Castletown, Rushen",yes,EGNS,IOM
+EGNT,large_airport,Newcastle International Airport,55.037958,-1.689577,GB,GB-ENG,"Newcastle upon Tyne, Tyne and Wear",yes,EGNT,NCL
+EGNU,small_airport,Full Sutton Airfield,53.980598,-0.864722,GB,GB-ENG,"York, North Yorkshire",no,,
+EGNV,medium_airport,Teesside International Airport,54.509201,-1.42941,GB,GB-ENG,"Darlington, Durham",yes,EGNV,MME
+EGNW,small_airport,Wickenby Aerodrome,53.3167,-0.349722,GB,GB-ENG,"Lincoln, Lincolnshire",no,EGNW,
+EGNX,large_airport,East Midlands Airport,52.8311,-1.32806,GB,GB-ENG,"Nottingham, Leicestershire",yes,EGNX,EMA
+EGNY,small_airport,Beverley/Linley Hill Airfield,53.898384,-0.36139,GB,GB-ENG,"Beverley, East Riding of Yorkshire",no,,
+EGOE,small_airport,Tern Hill Airfield,52.872775,-2.532692,GB,GB-ENG,"Market Drayton, Shropshire",no,,
+EGOQ,small_airport,RAF Mona,53.258598,-4.37355,GB,GB-WLS,"Bodffordd, Anglesey",no,,
+EGOS,medium_airport,RAF Shawbury,52.798199,-2.66804,GB,GB-ENG,"Shrewsbury, Shropshire",no,EGOS,
+EGOV,medium_airport,Anglesey Airport,53.2481,-4.53534,GB,GB-WLS,Angelsey,no,EGOV,VLY
+EGOW,small_airport,RAF Woodvale,53.5816,-3.05552,GB,GB-ENG,"Southport, Sefton",no,EGOW,
+EGPA,medium_airport,Kirkwall Airport,58.957903,-2.905077,GB,GB-SCT,"Kirkwall, Orkney Islands",yes,EGPA,KOI
+EGPB,medium_airport,Sumburgh Airport,59.878899,-1.29556,GB,GB-SCT,"Lerwick, Shetland",yes,EGPB,LSI
+EGPC,medium_airport,Wick John O'Groats Airport,58.4589,-3.09306,GB,GB-SCT,Wick,yes,EGPC,WIC
+EGPD,large_airport,Aberdeen International Airport,57.2019,-2.19778,GB,GB-SCT,Aberdeen,yes,EGPD,ABZ
+EGPE,medium_airport,Inverness Airport,57.5425,-4.0475,GB,GB-SCT,"Inverness, Highland",yes,EGPE,INV
+EGPF,large_airport,Glasgow Airport,55.871899,-4.43306,GB,GB-SCT,Glasgow,yes,EGPF,GLA
+EGPG,small_airport,Cumbernauld Airport,55.974701,-3.97556,GB,GB-SCT,Cumbernauld,no,,
+EGPH,large_airport,Edinburgh Airport,55.950145,-3.372288,GB,GB-SCT,"Ingliston, Edinburgh",yes,EGPH,EDI
+EGPI,medium_airport,Islay Airport,55.682708,-6.257525,GB,GB-SCT,"Isle of Islay, Argyll and Bute",yes,EGPI,ILY
+EGPJ,small_airport,Fife Airport,56.1833,-3.22028,GB,GB-SCT,Glenrothes,no,,
+EGPK,large_airport,Glasgow Prestwick Airport,55.501499,-4.577182,GB,GB-SCT,"Prestwick, South Ayrshire",yes,EGPK,PIK
+EGPL,medium_airport,Benbecula Airport,57.481098,-7.36278,GB,GB-SCT,Balivanich,yes,EGPL,BEB
+EGPN,medium_airport,Dundee Airport,56.452499,-3.02583,GB,GB-SCT,Dundee,yes,EGPN,DND
+EGPO,medium_airport,Stornoway Airport,58.215599,-6.33111,GB,GB-SCT,"Stornoway, Western Isles",yes,EGPO,SYY
+EGPR,medium_airport,Barra Airport,57.0228,-7.44306,GB,GB-SCT,Eoligarry,yes,EGPR,BRR
+EGPS,small_airport,Longside Airfield,57.516836,-1.864586,GB,GB-SCT,Peterhead,no,,
+EGPT,small_airport,Perth/Scone Airport,56.439201,-3.37222,GB,GB-SCT,"Perth, Perth and Kinross",no,EGPT,PSL
+EGPU,medium_airport,Tiree Airport,56.499199,-6.86917,GB,GB-SCT,"Balemartine, Argyll and Bute",yes,EGPU,TRE
+EGPW,small_airport,Unst Airfield,60.7472,-0.85385,GB,GB-SCT,"Baltasound, Shetland Islands",no,EGPW,
+EGQL,medium_airport,Leuchars Station Airfield,56.37398,-2.868862,GB,GB-SCT,"Leuchars, Fife",no,EGQL,ADX
+EGQS,medium_airport,RAF Lossiemouth,57.7052,-3.33917,GB,GB-SCT,"Lossiemouth, Moray",no,EGQS,LMO
+EGSC,medium_airport,Cambridge City Airport,52.205002,0.175,GB,GB-ENG,"Cambridge, Cambridgeshire",no,EGSC,CBG
+EGSF,small_airport,Peterborough Business Airport,52.468102,-0.251111,GB,GB-ENG,"Peterborough, Cambridgeshire",no,EGSF,
+EGSG,small_airport,Stapleford Aerodrome,51.6525,0.155833,GB,GB-ENG,"Romford, Greater London",no,EGSG,
+EGSH,medium_airport,Norwich Airport,52.6758,1.28278,GB,GB-ENG,"Norwich, Norfolk",yes,EGSH,NWI
+EGSJ,small_airport,Seething Airfield,52.510997,1.416864,GB,GB-ENG,"Mundham, Norfolk",no,EGSJ,
+EGSL,small_airport,Andrewsfield Aerodrome,51.895,0.449167,GB,GB-ENG,"Braintree, Essex",no,EGSL,
+EGSM,small_airport,Beccles Airfield,52.435299,1.61833,GB,GB-ENG,"Beccles, Suffolk",no,EGSM,
+EGSO,small_airport,Crowfield Airfield,52.173045,1.110649,GB,GB-ENG,"Ipswich, Suffolk",no,EGSO,
+EGSP,small_airport,Peterborough/Sibson Airfield,52.5571,-0.386982,GB,GB-ENG,"Peterborough, Cambridgeshire",no,EGSP,
+EGSQ,small_airport,Clacton Airfield,51.785,1.13,GB,GB-ENG,"Clacton-on-Sea, Essex",no,EGSQ,
+EGSR,small_airport,Earls Colne Airfield,51.914398,0.6825,GB,GB-ENG,"Colchester, Essex",no,EGSR,
+EGSS,large_airport,London Stansted Airport,51.884998,0.235,GB,GB-ENG,"London, Essex",yes,EGSS,STN
+EGST,small_airport,Elmsett Airfield,52.075454,0.977654,GB,GB-ENG,"Ipswich, Suffolk",no,EGST,
+EGSU,small_airport,Duxford Aerodrome,52.090801,0.131944,GB,GB-ENG,"Duxford, Cambridgeshire",no,EGSU,
+EGSV,small_airport,Old Buckenham Airfield,52.497501,1.05194,GB,GB-ENG,"Old Buckenham, Norfolk",no,EGSV,
+EGSX,small_airport,North Weald Airfield,51.721699,0.154167,GB,GB-ENG,"Epping, Essex",no,EGSX,
+EGTB,small_airport,Wycombe Air Park,51.61177,-0.808316,GB,GB-ENG,"Marlow, Buckinghamshire",no,EGTB,HYC
+EGTC,medium_airport,Cranfield Airport,52.072201,-0.616667,GB,GB-ENG,"Cranfield, Central Bedfordshire",no,EGTC,
+EGTD,small_airport,Dunsfold Aerodrome,51.117199,-0.535833,GB,GB-ENG,"Cranleigh, Surrey",no,EGTD,
+EGTE,medium_airport,Exeter International Airport,50.734261,-3.413984,GB,GB-ENG,"Exeter, Devon",yes,EGTE,EXT
+EGTF,small_airport,Fairoaks Airport,51.348099,-0.558889,GB,GB-ENG,"Woking, Surrey",no,EGTF,
+EGTH,small_airport,Old Warden Airfield,52.084591,-0.3201,GB,GB-ENG,"Biggleswade, Central Bedfordshire",no,EGTH,
+EGTK,medium_airport,London Oxford Airport,51.836899,-1.32,GB,GB-ENG,"Kidlington, Oxfordshire",no,EGTK,OXF
+EGTO,small_airport,Rochester Airport,51.351898,0.503333,GB,GB-ENG,"Rochester, Kent",no,EGTO,RCS
+EGTP,small_airport,Perranporth Airfield,50.330617,-5.179317,GB,GB-ENG,"Perranporth, Cornwall",no,EGTP,
+EGTR,small_airport,Elstree Airfield,51.6558,-0.325833,GB,GB-ENG,"Borehamwood, Hertfordshire",no,EGTR,
+EGTU,small_airport,Dunkeswell Airfield,50.860956,-3.233929,GB,GB-ENG,"Honiton, Devon",no,EGTU,
+EGTW,small_airport,Oaksey Park Airfield,51.632198,-2.01472,GB,GB-ENG,"Malmesbury, Wiltshire",no,EGTW,
+EGUB,medium_airport,RAF Benson,51.614366,-1.095991,GB,GB-ENG,"Wallingford, Oxfordshire",no,EGUB,BEX
+EGUD,small_airport,RAF Abingdon,51.690614,-1.316568,GB,GB-ENG,"Abingdon, Oxfordshire",no,,
+EGUL,medium_airport,RAF Lakenheath,52.40954,0.561161,GB,GB-ENG,"Brandon, Suffolk",no,EGUL,LKZ
+EGUN,medium_airport,RAF Mildenhall,52.3619,0.486406,GB,GB-ENG,"Bury Saint Edmunds, Suffolk",no,EGUN,MHZ
+EGUW,medium_airport,Wattisham Airfield,52.127451,0.956189,GB,GB-ENG,"Ipswich, Suffolk",no,,
+EGVA,medium_airport,RAF Fairford,51.683568,-1.789172,GB,GB-ENG,"Fairford, Gloucestershire",no,EGVA,FFD
+EGVN,medium_airport,RAF Brize Norton,51.75,-1.58362,GB,GB-ENG,"Carterton, Oxfordshire",no,EGVN,BZZ
+EGVO,medium_airport,RAF Odiham,51.2341,-0.942825,GB,GB-ENG,"Hook, Hampshire",no,EGVO,ODH
+EGVP,small_airport,Middle Wallop Airfield,51.143876,-1.568935,GB,GB-ENG,"Middle Wallop, Hampshire",no,,
+EGWC,medium_airport,RAF Cosford,52.640524,-2.305326,GB,GB-ENG,"Cosford, Shropshire",no,,
+EGWE,small_airport,RAF Henlow,52.0182,-0.30385,GB,GB-ENG,"Henlow, Central Bedfordshire",no,,
+EGWN,small_airport,RAF Halton,51.790699,-0.737972,GB,GB-ENG,"Halton, Buckinghamshire",no,EGWN,
+EGWU,medium_airport,RAF Northolt,51.553001,-0.418167,GB,GB-ENG,"Northolt, Greater London",no,EGWU,NHT
+EGXC,medium_airport,RAF Coningsby,53.092999,-0.166014,GB,GB-ENG,"Lincoln, Lincolnshire",no,EGXC,QCY
+EGXE,medium_airport,RAF Leeming,54.297191,-1.538944,GB,GB-ENG,"Northallerton, North Yorkshire",no,,
+EGXG,medium_airport,Leeds East Airport,53.834747,-1.194678,GB,GB-ENG,"Tadcaster, North Yorkshire",no,EGCM,
+EGXH,medium_airport,RAF Honington,52.342602,0.772939,GB,GB-ENG,"Bury Saint Edmunds, Suffolk",no,EGXH,BEQ
+EGXT,medium_airport,RAF Wittering,52.612598,-0.476453,GB,GB-ENG,"Peterborough, Cambridgeshire",no,EGXT,
+EGXW,medium_airport,RAF Waddington,53.166199,-0.523811,GB,GB-ENG,"Lincoln, Lincolnshire",no,EGXW,WTN
+EGXY,small_airport,RAF Syerston,53.0228,-0.911111,GB,GB-ENG,"Newark on Trent, Nottinghamshire",no,EGXY,
+EGXZ,medium_airport,RAF Topcliffe,54.204116,-1.380265,GB,GB-ENG,"Thirsk, North Yorkshire",no,,
+EGYD,medium_airport,RAF Cranwell,53.027308,-0.493104,GB,GB-ENG,"Sleaford, Lincolnshire",no,EGYD,
+EGYE,medium_airport,RAF Barkston Heath,52.960616,-0.559428,GB,GB-ENG,"Grantham, Lincolnshire",no,EGYE,
+EGYM,medium_airport,RAF Marham,52.648395,0.550692,GB,GB-ENG,"King's Lynn, Norfolk",no,EGYM,KNF
+ES-0001,small_airport,Trebujena Airfield,36.858889,-6.139167,ES,ES-AN,Trebujena,no,,
+ES-0002,small_airport,Vinaròs Airfield,40.519722222,0.390277778,ES,ES-VC,Vinaròs,no,,
+ES-0010,small_airport,Aeródromo de Antela,42.1045,-7.7118,ES,ES-GA,Xinzo de Limia,no,,
+ES-0012,small_airport,Castriz/Cambe Airfield,43.102502,-8.7617,ES,ES-GA,Santa Comba,no,,
+ES-0020,small_airport,Aeròdrom de Pals,42.0069903,3.1519175,ES,ES-CT,,no,,
+ES-0024,small_airport,Ultralight Aeroclub Müller,37.26076,-1.85236,ES,ES-AN,Vera,no,,
+ES-0069,small_airport,Air Marugán,40.9111,-4.370917,ES,ES-CL,Marugán,no,,
+ES-0098,small_airport,Prat de la Plana Airfield,41.80016,2.112064,ES,ES-CT,Moià,no,,
+ES-0111,small_airport,Aeródromo Villanueva del Pardillo,40.5001069999,-3.9920997,ES,ES-MD,Villanueva del Pardillo,no,,
+ES-0123,small_airport,Aerodrom Tapioles,42.225478,2.615891,ES,ES-CT,Tortellà,no,,
+ES-0132,small_airport,Alats Club Bellvei,41.2443358,1.5632892,ES,ES-CT,Bellvei,no,,
+ES-0148,small_airport,Villanueva de la Cañada Airfield,40.436582,-4.024985,ES,ES-MD,Villanueva de la Cañada,no,,
+ES-0158,small_airport,Olocau Airfield,39.675517,-0.548855,ES,ES-VC,Olocau,no,,
+ES-0162,small_airport,Aeródromo Loring,40.6602,-3.59489,ES,ES-MD,El Molar,no,,
+ES-0167,small_airport,La Llosa Airfield,39.74979,-0.181346,ES,ES-VC,La Llosa,no,,
+ES-0175,small_airport,Aeródromo Mazaricos,42.982329,-9.005002,ES,ES-GA,Fervenza,no,,
+ES-0178,small_airport,Aeródromo de Brunete,40.396556,-4.023712,ES,ES-MD,Brunete,no,,
+ES-0219,small_airport,Aeródromo de Camarenilla,40.024702,-4.071202,ES,ES-CM,Camarenilla,no,,
+ES-0263,small_airport,El Barranco - Sierra Morena,38.03774,-3.76585,ES,ES-AN,Bailén (Jaén),no,,
+GB-0002,small_airport,Fishburn Airfield,54.686798,-1.45831,GB,GB-ENG,"Ferryhill, Durham",no,,
+GB-0007,small_airport,Enstone Aerodrome,51.928167,-1.4285,GB,GB-ENG,"Chipping Norton, Oxfordshire",no,EGTN,
+GB-0008,small_airport,Causeway Airfield,55.058817,-6.58439,GB,GB-NIR,"Coleraine, Londonderry",no,,
+GB-0026,small_airport,Newton Peveril Airfield,50.794959,-2.096689,GB,GB-ENG,"Wimborne, Dorset",no,,
+GB-0037,small_airport,White Ox Mead Airstrip,51.319857,-2.400939,GB,GB-ENG,"Bath, Somerset",no,,
+GB-0038,small_airport,Eshott Airfield,55.280484,-1.714897,GB,GB-ENG,"Morpeth, Northumberland",no,,
+GB-0042,small_airport,Lower Upham Airfield,50.972508,-1.248493,GB,GB-ENG,"Southampton, Hampshire",no,,
+GB-0044,small_airport,Lower Upham Farm Aerodrome,51.496695,-1.712708,GB,GB-ENG,"Marlborough, Wiltshire",no,,
+GB-0045,small_airport,Clench Common Airfield,51.390238,-1.733427,GB,GB-ENG,"Marlborough, Wiltshire",no,,
+GB-0046,small_airport,Keyston Airfield,52.367395,-0.478239,GB,GB-ENG,"Huntingdon, Cambridgeshire",no,,
+GB-0047,small_airport,Northrepps Aerodrome,52.893807,1.32106,GB,GB-ENG,"Cromer, Norfolk",no,,
+GB-0048,small_airport,Easter Airfield,57.753343,-3.94279,GB,GB-SCT,"Tain, Ross",no,,
+GB-0049,small_airport,Bowerswaine Farm Airfield,50.889923,-1.985821,GB,GB-ENG,"Wimborne, Dorset",no,,
+GB-0050,small_airport,Wing Farm Airfield,51.163355,-2.208607,GB,GB-ENG,"Warminster, Wiltshire",no,,
+GB-0051,small_airport,Colemore Farm Airfield,51.060926,-1.010742,GB,GB-ENG,"Faringdon, Oxfordshire",no,,
+GB-0052,small_airport,Eggesford Airfield,50.866839,-3.86312,GB,GB-ENG,"Chulmleigh, Devon",no,,
+GB-0058,small_airport,Boston Aerodrome,52.974601,-0.071828,GB,GB-ENG,"Boston, Lincolnshire",no,,
+GB-0062,small_airport,Branscombe Airfield,50.697839,-3.15566,GB,GB-ENG,"Branscombe, Devon",no,,
+GB-0063,small_airport,Farway Common Airfield,50.735827,-3.179173,GB,GB-ENG,"Sidmouth, Devon",no,,
+GB-0064,small_airport,Ashcroft Airfield,53.16451,-2.572222,GB,GB-ENG,"Winsford, Cheshire",no,,
+GB-0065,small_airport,Audley End Airfield,52.007042,0.224104,GB,GB-ENG,"Saffron Waldon, Essex",no,,
+GB-0068,small_airport,Gigha Airfield,55.655171,-5.755033,GB,GB-SCT,"Isle of Gigha, Argyll and Bute",no,,
+GB-0073,small_airport,Hinton-in-the-Hedges Airfield,52.028717,-1.207157,GB,GB-ENG,"Brackley, Northmanptonshire",no,,
+GB-0075,small_airport,Elvington Airfield,53.922976,-0.993347,GB,GB-ENG,"York, North Yorkshire",no,,
+GB-0177,small_airport,Great Oakley Airfield,51.912343,1.182142,GB,GB-ENG,"Harwich, Essex",no,,
+GB-0180,small_airport,Strathaven Airfield,55.679968,-4.113381,GB,GB-SCT,"Strathaven, South Lanarkshire",no,,
+GB-0182,small_airport,East Kirkby Airfield,53.13758,0.002098,GB,GB-ENG,"Spilsby, Lincolnshire",no,,
+GB-0185,small_airport,Wadswick Farm Airstrip,51.411085,-2.220385,GB,GB-ENG,"Corsham, Wiltshire",no,,
+GB-0198,small_airport,Priory Farm Airstrip,52.452504,1.130862,GB,GB-ENG,"Tibenham, Norfolk",no,,
+GB-0201,small_airport,Glenswinton Farm Airstrip,55.047763,-4.031649,GB,GB-SCT,"Castle Douglas, Dumfries and Galloway",no,,
+GB-0202,small_airport,Insch Airstrip,57.310997,-2.648415,GB,GB-SCT,"Insch, Aberdeenshire",no,,
+GB-0203,small_airport,Westonzoyland Airfield,51.10684,-2.908688,GB,GB-ENG,"Bridgwater, Somerset",no,,
+GB-0204,small_airport,Plaistows Airfield,51.728167,-0.380173,GB,GB-ENG,"St Albans, Hertfordshire",no,,
+GB-0205,small_airport,Nantclwyd Airstrip,53.063218,-3.32298,GB,GB-WLS,"Ruthin, Denbighshire",no,,
+GB-0208,small_airport,Thornborough Grounds Airstrip,52.005948,-0.935376,GB,GB-ENG,"Buckingham, Buckinghamshire",no,,
+GB-0240,small_airport,Grove Farm Airstrip,53.31413,-0.866172,GB,GB-ENG,"Retford, Nottinghamshire",no,,
+GB-0248,small_airport,Rufforth East Airfield,53.952146,-1.174893,GB,GB-ENG,"York, North Yorkshire",no,,
+GB-0279,small_airport,Stoke Golding Airfield,52.5800833,-1.4313333,GB,GB-ENG,Stoke Golding,no,,
+GB-0316,small_airport,Napps Field Airstrip,51.65625,0.42067,GB,GB-ENG,Billericay,no,,
+GB-0341,small_airport,Garton Field Airstrip,53.796785,-0.091667,GB,GB-ENG,"Kingston upon Hull, East Riding of Yorkshire",no,,
+GB-0357,small_airport,Bute Airfield,55.756777,-5.047962,GB,GB-SCT,,no,,
+GB-0365,small_airport,Holmbeck Farm Airfield,51.910275,-0.729577,GB,GB-ENG,"Leighton Buzzard, Buckinghamshire",no,,
+GB-0368,small_airport,Long Acres Farm,52.129787,-0.310853,GB,GB-ENG,"Sandy, Central Bedfordshire",no,,
+GB-0369,small_airport,Darley Moor Airfield,52.9693,-1.74868,GB,GB-ENG,"Ashbourne, Derbyshire",no,,
+GB-0414,small_airport,RAF Weston-on-the-Green,51.878712,-1.218775,GB,GB-ENG,"Bicester, Oxfordshire",no,,
+GB-0420,small_airport,Tibenham Airfield,52.455906,1.156054,GB,GB-ENG,"Tibenham, Norfolk",no,,
+GB-0440,small_airport,Tarn Farm Airfield (Rossall Field),53.933935,-2.843614,GB,GB-ENG,Lancaster,no,,
+GB-0464,small_airport,Hunsdon Airfield,51.8078,0.069644,GB,GB-ENG,"Ware, Hertfordshire",no,,
+GB-0492,small_airport,Rattlesden Airfield,52.168195,0.866375,GB,GB-ENG,"Bury Saint Edmunds, Suffolk",no,,
+GB-0577,small_airport,Kirriemuir Farm Strip,56.650319,-3.028797,GB,GB-SCT,"Kirriemuir, Angus",no,,
+GB-0615,small_airport,London Gliding Club,51.868549,-0.545165,GB,GB-ENG,"Dunstable, Central Bedfordshire",no,,
+GB-0616,small_airport,Darlton Gliding Club,53.244587,-0.859207,GB,GB-ENG,"Tuxford, Nottinghamshire",no,,
+GB-0762,small_airport,Edington Private Airstrip,51.267796,-2.101908,GB,GB-ENG,"Westbury, Wiltshire",no,,
+GB-0815,small_airport,Kittyhawk Aerodrome,50.8693,0.1166,GB,GB-ENG,"Chalvington with Ripe, Sussex",no,,
+GB-0978,small_airport,Greenlease Farm Airstrip,50.7484,-0.76941,GB,GB-ENG,"Chichester, West Sussex",no,,
+GB-1102,small_airport,Baldardo Field,56.666793,-2.800847,GB,GB-SCT,,no,,
+GB-1136,small_airport,Middlezoy Aerodrome,51.10308,-2.90399,GB,GB-ENG,"Bridgwater, Somerset",no,,
+GB-1209,small_airport,Rufforth West Airfield,53.947146,-1.18721,GB,GB-ENG,"York, North Yorkshire",no,,
+GB-1222,small_airport,RAF Wyton,52.357117,-0.107787,GB,GB-ENG,"St Ives, Cambridgeshire",no,EGUY,QUY
+GB-1273,small_airport,Plockton Airstrip,57.335499,-5.67308,GB,GB-SCT,Plockton,no,,
+GB-1274,small_airport,Crosland Moor Airfield,53.621667,-1.830278,GB,GB-ENG,"Huddersfield, West Yorkshire",no,,
+GB-1275,small_airport,Breighton Airfield,53.802794,-0.917179,GB,GB-ENG,"Selby, North Yorkshire",no,,
+GB-1278,small_airport,Cark airfield,54.164266,-2.96133,GB,GB-ENG,Cark,no,,
+GB-1279,small_airport,North Coates Airfield,53.497795,0.061976,GB,GB-ENG,"Grimsby, Lincolnshire",no,,
+GB-1281,small_airport,Badminton Airfield,51.548417,-2.303181,GB,GB-ENG,"Badminton, Gloucestershire",no,,
+GB-1361,small_airport,Ragley Hall Airstrip,52.2283,-1.8439,GB,GB-ENG,Alcester,no,,
+GB-DOC,small_airport,Dornoch Airfield,57.868999,-4.023,GB,GB-SCT,"Dornoch, Sunderland",no,,
+GB-ULL,small_airport,Glenforsa Airfield,56.517202,-5.91401,GB,GB-SCT,"Glenforsa, Argyll and Bute",no,,
+GCFV,large_airport,Fuerteventura Airport,28.4527,-13.8638,ES,ES-CN,El Matorral,yes,GCFV,FUE
+GCGM,small_airport,La Gomera Airport,28.0296,-17.2146,ES,ES-CN,"Alajero, La Gomera Island",yes,GCGM,GMZ
+GCHI,medium_airport,El Hierro Airport,27.8148,-17.8871,ES,ES-CN,El Hierro Island,yes,GCHI,VDE
+GCLA,medium_airport,La Palma Airport,28.626499,-17.7556,ES,ES-CN,"Sta Cruz de la Palma, La Palma Island",yes,GCLA,SPC
+GCLP,large_airport,Gran Canaria Airport,27.9319,-15.3866,ES,ES-CN,Gran Canaria Island,yes,GCLP,LPA
+GCRR,large_airport,César Manrique-Lanzarote Airport,28.945499,-13.6052,ES,ES-CN,San Bartolomé,yes,GCRR,ACE
+GCTS,large_airport,Tenerife Sur Airport,28.0445,-16.5725,ES,ES-CN,Tenerife,yes,GCTS,TFS
+GCXO,large_airport,Tenerife Norte-Ciudad de La Laguna Airport,28.482752,-16.341707,ES,ES-CN,Tenerife,yes,GCXO,TFN
+GEML,medium_airport,Melilla Airport,35.2798,-2.95626,ES,ES-ML,Melilla,yes,GEML,MLN
+LEAB,medium_airport,Albacete Airport / Los Llanos Air Base,38.948502,-1.86352,ES,ES-CM,Albacete,no,LEAB,ABC
+LEAL,large_airport,Alicante-Elche Miguel Hernández Airport,38.2822,-0.558156,ES,ES-VC,Alicante,yes,LEAL,ALC
+LEAM,medium_airport,Almería Airport,36.843899,-2.3701,ES,ES-AN,Almería,yes,LEAM,LEI
+LEAS,large_airport,Asturias Airport,43.563599,-6.03462,ES,ES-AS,Ranón,yes,LEAS,OVD
+LEAX,small_airport,La Axarquía-Leoni Benabu Airfield,36.801666,-4.135556,ES,ES-AN,Málaga,no,LEAX,
+LEBA,medium_airport,Córdoba Airport,37.841999,-4.84888,ES,ES-AN,Córdoba,yes,LEBA,ODB
+LEBB,large_airport,Bilbao Airport,43.301102,-2.91061,ES,ES-PV,Bilbao,yes,LEBB,BIO
+LEBE,small_airport,Beas de Segura Airfield,38.271949,-2.952914,ES,ES-AN,Jaén,no,LEBE,
+LEBG,medium_airport,Burgos Airport,42.357601,-3.62076,ES,ES-CL,Burgos,no,LEBG,RGS
+LEBL,large_airport,Josep Tarradellas Barcelona-El Prat Airport,41.2971,2.07846,ES,ES-CT,Barcelona,yes,LEBL,BCN
+LEBZ,medium_airport,Badajoz Airport,38.8913,-6.82133,ES,ES-EX,Badajoz,yes,LEBZ,BJZ
+LECD,small_airport,La Cerdanya Airfield,42.386398,1.86667,ES,ES-CT,Alp,no,,
+LECH,medium_airport,Castellón-Costa Azahar Airport,40.213889,0.073333,ES,ES-VC,Castellón de la Plana,yes,LECH,CDT
+LECI,small_airport,Santa Cilia de Jaca Airfield,42.569199,-0.727778,ES,ES-AR,Huesca,no,LECI,
+LECN,small_airport,Castellon de la Plana Aerodrome,39.99836,0.026355,ES,ES-VC,Castellón de la Plana,no,LECN,
+LECO,medium_airport,A Coruña Airport,43.302101,-8.37726,ES,ES-GA,Culleredo,yes,LECO,LCG
+LECU,medium_airport,Madrid-Cuatro Vientos Airport,40.370701,-3.78514,ES,ES-MD,Madrid,no,LECU,
+LEDA,medium_airport,Lleida-Alguaire Airport,41.728185,0.535023,ES,ES-CT,Lleida,yes,LEDA,ILD
+LEFM,small_airport,Fuentemilanos Airfield,40.889137,-4.240165,ES,ES-CL,Segovia,no,,
+LEGA,medium_airport,Armilla Air Base,37.133202,-3.63569,ES,ES-AN,Armilla,no,,
+LEGE,large_airport,Girona-Costa Brava Airport,41.904639,2.761774,ES,ES-CT,Girona,yes,LEGE,GRO
+LEGR,medium_airport,F.G.L. Airport Granada-Jaén Airport,37.188702,-3.77736,ES,ES-AN,Granada,yes,LEGR,GRX
+LEGT,medium_airport,Getafe Air Base,40.294102,-3.72383,ES,ES-MD,Getafe,no,LEGT,
+LEHC,small_airport,Huesca-Pirineos Airport,42.076099,-0.316667,ES,ES-AR,Monflorite/Alcalá del Obispo,no,LEHC,HSK
+LEIB,large_airport,Ibiza Airport,38.872898,1.37312,ES,ES-IB,Ibiza (Eivissa),yes,LEIB,IBZ
+LEIG,small_airport,Igualada/Odena Airfield,41.585602,1.65306,ES,ES-CT,Barcelona,no,,
+LEJR,medium_airport,Jerez Airport,36.744598,-6.06011,ES,ES-AN,Jerez de la Frontera,yes,LEJR,XRY
+LELC,medium_airport,San Javier Airport,37.775002,-0.812389,ES,ES-MC,San Javier,no,LELC,
+LELL,small_airport,Sabadell Airfield,41.520901,2.10508,ES,ES-CT,Sabadell,no,,
+LELN,medium_airport,León Airport,42.590709,-5.653406,ES,ES-CL,La Virgen del Camino,yes,LELN,LEN
+LELO,medium_airport,Logroño-Agoncillo Airport,42.460953,-2.322235,ES,ES-RI,Logroño,yes,LERJ,RJL
+LELT,small_airport,Lillo Airfield,39.7169,-3.32056,ES,ES-CM,Lillo,no,,
+LEMD,large_airport,Adolfo Suárez Madrid–Barajas Airport,40.493407,-3.572249,ES,ES-MD,Madrid,yes,LEMD,MAD
+LEMG,large_airport,Málaga-Costa del Sol Airport,36.6749,-4.49911,ES,ES-AN,Málaga,yes,LEMG,AGP
+LEMH,large_airport,Menorca Airport,39.862598,4.21865,ES,ES-IB,Mahón (Maó),yes,LEMH,MAH
+LEMO,medium_airport,Moron Air Base,37.17490005493164,-5.615940093994141,ES,ES-AN,Morón,no,LEMO,OZP
+LEMR,small_airport,La Morgal Airfield,43.429199,-5.83056,ES,ES-AS,Oviedo,no,,
+LEMT,small_airport,Casarrubios Del Monte Airfield,40.235001,-4.02639,ES,ES-CM,Toledo,no,,
+LEMU,small_airport,Muchamiel Airfield,38.440601,-0.475278,ES,ES-VC,Muchamiel,no,,
+LENA,small_airport,Benabarre Airfield,42.0228,0.482222,ES,ES-AR,Huesca,no,,
+LEOC,small_airport,Ocaña Airfield,39.9375,-3.50333,ES,ES-CM,Ocaña,no,,
+LEOS,small_airport,Aeródromo de los Oteros,42.333056,-5.451944,ES,ES-CL,Pajares de Los Oteros,no,,
+LEPA,large_airport,Palma de Mallorca Airport,39.551701,2.73881,ES,ES-IB,Palma de Mallorca,yes,LEPA,PMI
+LEPI,small_airport,Casas de los Pinos Airfield,39.298199,-2.37872,ES,ES-CM,Casas de los Pinos,no,,
+LEPP,medium_airport,Pamplona Airport,42.77,-1.64633,ES,ES-NC,Pamplona,yes,LEPP,PNA
+LERE,small_airport,Aeródromo Requena El Rebollar,39.474701,-1.03444,ES,ES-VC,Requena,no,,
+LERI,medium_airport,Alcantarilla Air Base,37.951099,-1.23032,ES,ES-MC,Alcantarilla,no,,
+LERM,small_airport,Robledillo De Mohernando Airfield,40.865299,-3.24778,ES,ES-CM,Robledillo De Mohernando,no,,
+LERP,small_airport,Aeródromo de Herrera de Pisuerga,42.5923,-4.2902,ES,ES-CL,Herrera de Pisuerga,no,LERP,
+LERS,large_airport,Reus Airport,41.147509,1.168354,ES,ES-CT,Reus,yes,LERS,REU
+LERT,medium_airport,Rota Naval Station Airport,36.645198822,-6.34946012497,ES,ES-AN,Rota,no,LERT,ROZ
+LESA,medium_airport,Salamanca Airport,40.952099,-5.50199,ES,ES-CL,Salamanca,yes,LESA,SLM
+LESB,small_airport,Son Bonet Airfield,39.5989,2.70278,ES,ES-IB,Marratxí,no,LESB,
+LESL,small_airport,Sant Lluis Airfield,39.861878,4.251739,ES,ES-IB,Sant Lluis,no,LESL,
+LESO,medium_airport,San Sebastián Airport,43.356499,-1.79061,ES,ES-PV,Hondarribia,yes,LESO,EAS
+LEST,large_airport,Santiago-Rosalía de Castro Airport,42.896301,-8.41514,ES,ES-GA,Santiago de Compostela,yes,LEST,SCQ
+LESU,medium_airport,Pirineus - la Seu d'Urgel Airport,42.3386,1.40917,ES,ES-CT,La Seu d'Urgell Pyrenees and Andorra,yes,LESU,LEU
+LETI,small_airport,El Tietar Airfield,40.2439,-4.79444,ES,ES-CM,La Iglesuela,no,,
+LETL,medium_airport,Teruel Airport,40.410269,-1.217366,ES,ES-AR,Teruel,no,LETL,TEV
+LETO,medium_airport,Madrid–Torrejón Airport / Torrejón Air Base,40.487875,-3.456808,ES,ES-MD,Madrid,no,LETO,TOJ
+LEVC,large_airport,Valencia Airport,39.489162,-0.480961,ES,ES-VC,Valencia,yes,LEVC,VLC
+LEVD,medium_airport,Valladolid Airport,41.7061,-4.85194,ES,ES-CL,Valladolid,yes,LEVD,VLL
+LEVT,medium_airport,Vitoria Airport,42.882801,-2.72447,ES,ES-PV,Alava,yes,LEVT,VIT
+LEVX,medium_airport,Vigo Airport,42.2318,-8.62677,ES,ES-GA,Vigo,yes,LEVX,VGO
+LEXJ,medium_airport,Seve Ballesteros-Santander Airport,43.427101,-3.82001,ES,ES-CB,Santander,yes,LEXJ,SDR
+LEZG,large_airport,Zaragoza Airport,41.666199,-1.04155,ES,ES-AR,Zaragoza,yes,LEZG,ZAZ
+LEZL,large_airport,Seville Airport,37.417999,-5.89311,ES,ES-AN,Seville,yes,LEZL,SVQ

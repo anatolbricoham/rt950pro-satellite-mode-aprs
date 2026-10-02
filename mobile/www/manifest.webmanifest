@@ -1,0 +1,11 @@
+{
+  "name": "BricoHams RT-950 Programmer",
+  "short_name": "RT-950 BH",
+  "description": "Programador Bluetooth / USB para Radtel RT-950 y RT-950 Pro",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#23272B",
+  "theme_color": "#F26B1D",
+  "icons": [{"src": "img/icon_256.png", "sizes": "256x256", "type": "image/png"},
+            {"src": "img/icon_64.png", "sizes": "64x64", "type": "image/png"}]
+}

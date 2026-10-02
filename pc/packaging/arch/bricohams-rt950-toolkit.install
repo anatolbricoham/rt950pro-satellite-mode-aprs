@@ -1,0 +1,2 @@
+post_install() { udevadm control --reload-rules 2>/dev/null || true; }
+post_upgrade() { post_install; }

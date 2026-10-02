@@ -1,0 +1,23 @@
+{
+  "name": "bricohams-rt950-programmer",
+  "version": "0.3.0",
+  "private": true,
+  "description": "BricoHams RT-950 Programmer: Bluetooth / USB programmer for the Radtel RT-950 and RT-950 Pro (web app and Android APK)",
+  "license": "GPL-3.0-or-later",
+  "author": "BricoHams",
+  "scripts": {
+    "sync": "cap sync android",
+    "apk:debug": "cap sync android && cd android && ./gradlew assembleDebug",
+    "apk:release": "cap sync android && cd android && ./gradlew assembleRelease"
+  },
+  "dependencies": {
+    "@capacitor-community/bluetooth-le": "8.3.0",
+    "@capacitor/android": "8.5.2",
+    "@capacitor/core": "8.5.2",
+    "@capacitor/filesystem": "8.1.3",
+    "@capacitor/share": "8.0.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.2"
+  }
+}

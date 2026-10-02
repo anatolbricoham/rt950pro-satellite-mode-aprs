@@ -1,0 +1,4 @@
+#!/bin/sh
+# Launcher installed by the Debian / Arch packages
+export PYTHONPATH="/usr/lib/bricohams-rt950-toolkit:/usr/lib/bricohams-rt950-toolkit/vendor${PYTHONPATH:+:$PYTHONPATH}"
+exec python3 -m rt950_toolkit "$@"

@@ -1,0 +1,33 @@
+# Maintainer: BricoHams <maitchovcow@gmail.com>
+# Arch Linux package of BricoHams RT-950 Toolkit.
+#   From a release:   makepkg -si            (downloads the source tarball)
+#   From a checkout:  BH_LOCAL=1 makepkg -si  (uses the repository it sits in)
+pkgname=bricohams-rt950-toolkit
+pkgver=0.3.0
+pkgrel=1
+pkgdesc="Programmer for the Radtel RT-950 / RT-950 Pro: codeplug, country codeplugs, firmware, satellites (BricoHams)"
+arch=('any')
+url="https://anatolbricoham.github.io/rt950pro-satellite-mode/"
+license=('GPL-3.0-or-later')
+depends=('python' 'tk')
+optdepends=('python-pillow: JPG/PNG boot logo conversion')
+makedepends=()
+install=bricohams-rt950-toolkit.install
+_repo="https://github.com/anatolbricoham/rt950pro-satellite-mode"
+source=("sgp4-2.27.tar.gz::https://files.pythonhosted.org/packages/source/s/sgp4/sgp4-2.27.tar.gz"
+        "pyserial-3.5.tar.gz::https://files.pythonhosted.org/packages/source/p/pyserial/pyserial-3.5.tar.gz")
+sha256sums=('06d37247c6985739b707b8b39b6b83e06e8af783b2531e31965501ba983985f9'
+            '3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb')
+if [ -z "$BH_LOCAL" ]; then
+    source+=("$pkgname-$pkgver.tar.gz::$_repo/archive/refs/tags/v$pkgver.tar.gz")
+    sha256sums+=('SKIP')
+fi
+
+package() {
+    if [ -n "$BH_LOCAL" ]; then
+        _src="$(cd "$startdir/../../.." && pwd)"
+    else
+        _src="$srcdir/rt950pro-satellite-mode-$pkgver"
+    fi
+    VENDOR_DIR="$srcdir" sh "$_src/pc/packaging/linux/stage.sh" "$pkgdir"
+}

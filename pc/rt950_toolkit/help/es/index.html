@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual — BricoHams RT-950 Toolkit</title>
+<link rel="stylesheet" href="../help.css">
+</head>
+<body>
+<header>
+  <img src="../bricohams_logo.svg" alt="BricoHams">
+  <div class="t"><h1>RT-950 Toolkit — Manual de uso</h1><p>Radioafición · Hazlo tú mismo</p></div>
+  <div class="lang"><a href="../en/index.html">English</a></div>
+</header>
+<div class="wrap">
+<nav>
+  <a href="#inicio">1. Primeros pasos</a>
+  <a href="#leer">2. Leer y guardar</a>
+  <a href="#editar">3. Editar la configuración</a>
+  <a href="#pais">4. Codeplug por país</a>
+  <a href="#escribir">5. Escribir en la radio</a>
+  <a href="#firmware">6. Firmware</a>
+  <a href="#satelites">7. Satélites</a>
+  <a href="#aprs">8. APRS</a>
+  <a href="#ficheros">9. Ficheros y formatos</a>
+  <a href="#cli">10. Línea de comandos</a>
+  <a href="#problemas">11. Problemas frecuentes</a>
+  <a href="#backup">12. Copias de seguridad</a>
+  <a href="#aviso">13. Aviso de responsabilidad</a>
+  <a href="#creditos">14. Créditos</a>
+</nav>
+<main>
+
+<h2 id="inicio">1. Primeros pasos</h2>
+<p><b>BricoHams RT-950 Toolkit</b> programa la Radtel RT-950 y RT-950 Pro por el cable de programación, en Windows y Linux. Sirve para radios con el firmware original de Radtel y con el firmware custom de BricoHams.</p>
+<table>
+<tr><th>Sistema</th><th>Instalación</th></tr>
+<tr><td>Windows 10/11</td><td>Ejecuta <code>BricoHams-RT950-Toolkit-Setup-x.y.z.exe</code>. El instalador está firmado por BricoHams; si Windows avisa de un editor desconocido, consulta <a href="#problemas">Problemas frecuentes</a>.</td></tr>
+<tr><td>Debian / Ubuntu</td><td><code>sudo apt install ./bricohams-rt950-toolkit_x.y.z_all.deb</code></td></tr>
+<tr><td>Arch Linux</td><td><code>sudo pacman -U bricohams-rt950-toolkit-x.y.z-1-any.pkg.tar.zst</code></td></tr>
+<tr><td>Otras distribuciones</td><td>Ejecutable portable <code>RT950Toolkit-linux-x64</code> (<code>chmod +x</code>) o desde el código: <code>python3 pc/run_toolkit.py</code></td></tr>
+</table>
+<p>En Linux el usuario necesita permiso sobre el puerto serie: <code>sudo usermod -aG dialout $USER</code> (Debian/Ubuntu) o <code>uucp</code> (Arch), y volver a iniciar la sesión. Los paquetes .deb y Arch añaden una regla udev para el cable.</p>
+<p>Conecta el cable, enciende la radio y elige el <b>Puerto</b> (<kbd>Actualizar</kbd> vuelve a buscar). En Windows es <code>COMx</code>; en Linux <code>/dev/ttyUSB0</code> o <code>/dev/ttyACM0</code>.</p>
+<p>La primera vez se muestra el <a href="#aviso">aviso de responsabilidad</a>, que hay que aceptar para usar la radio desde el programa.</p>
+
+<h2 id="leer">2. Leer y guardar</h2>
+<p><kbd>Leer de la radio</kbd> detecta el firmware (original o custom) y lee toda la configuración. Al terminar guarda una copia de seguridad con fecha (<b>Radio → Abrir carpeta de copias</b>). Guarda tu trabajo con <b>Archivo → Guardar</b> (formato <code>.rt950</code>).</p>
+
+<h2 id="editar">3. Editar la configuración</h2>
+<table>
+<tr><th>Pestaña</th><th>Contenido</th></tr>
+<tr><td>Canales</td><td>990 canales en 10 zonas de 99. Doble clic para editar: nombre, RX/TX, tonos CTCSS/DCS, potencia, ancho, modo RX FM/AM, TX permitida, escaneo, bloqueo, scrambler, cifrado, código de señal y PTT-ID. Copiar, pegar, subir y bajar.</td></tr>
+<tr><td>Zonas</td><td>Nombres de las 10 zonas (16 caracteres).</td></tr>
+<tr><td>VFO</td><td>Frecuencia y desplazamiento de VFO A, B y C. El resto se muestra en solo lectura.</td></tr>
+<tr><td>Ajustes</td><td>Generales, teclas, DTMF y FM/AM/SSB.</td></tr>
+<tr><td>APRS</td><td>Indicativo, SSID, rutas, mensaje de baliza, símbolo y temporización.</td></tr>
+<tr><td>Satélites</td><td>TLE, pases, canales Doppler y carga en la radio (firmware custom).</td></tr>
+<tr><td>Firmware</td><td>Actualizar o restaurar el firmware de la radio.</td></tr>
+<tr><td>Logo de arranque</td><td>Convertir y subir una imagen de 240×320 (firmware custom).</td></tr>
+</table>
+<p><b>Herramientas → Añadir canales predefinidos</b> añade PMR446, símplex IARU R1, marina o banda aérea en los canales que elijas.</p>
+
+<h2 id="pais">4. Codeplug por país</h2>
+<p><b>Herramientas → Codeplug por país…</b> carga una configuración lista para usar:</p>
+<table>
+<tr><th>País</th><th>Zonas 1–9</th><th>Zona 10</th></tr>
+<tr><td>España</td><td>EA1 … EA9: repetidores FM de 2 m y 70 cm del distrito (lista de la URE) y frecuencias de los aeropuertos del distrito (torre, aproximación, ATIS, rodadura, información; <b>solo RX, AM</b>).</td><td>PMR-CB: PMR446 (16 canales) y CB-27 (40 canales), <b>solo RX</b>.</td></tr>
+<tr><td>Reino Unido</td><td>Una zona por región ETCC (SE, SW e islas del Canal, Midlands, East Anglia, North e isla de Man, Gales, Escocia, Irlanda del Norte) con repetidores FM (ukrepeater.net) y aeropuertos; zona 9: símplex, APRS e ISS.</td><td>PMR-CB: PMR446, CB UK 27/81 y CB CEPT, <b>solo RX</b>.</td></tr>
+</table>
+<p><b>Sobrescribir</b> sustituye todos los canales (radio nueva o si quieres empezar de cero). <b>Añadir</b> conserva tus canales: los del país se colocan en los huecos libres de cada zona y se saltan los que ya tienes. Con <b>Renombrar las zonas</b> desactivado solo se cambian las zonas sin nombre.</p>
+<p>Cada zona admite 99 canales. Si no caben todos, se quedan los más cercanos a <b>Mi locator</b> (o al centro de la zona). <kbd>Vista previa</kbd> muestra cuántos se añaden en cada zona y cuáles no caben.</p>
+<div class="note"><b>Radio ya configurada:</b> primero <kbd>Leer de la radio</kbd>, después Codeplug por país → Añadir, revisa y <kbd>Escribir en la radio</kbd>. Un codeplug de país creado desde cero solo escribe canales y nombres de zona: los ajustes de la radio no se tocan.</div>
+<p>También hay codeplugs ya generados para descargar en cada versión (<code>codeplug-ES.rt950</code>, <code>codeplug-GB.rt950</code> y sus CSV para CHIRP y RT-950 Editor).</p>
+<p>Los datos proceden de listas públicas y pueden cambiar: comprueba los repetidores de tu zona. Las frecuencias aeronáuticas, PMR446 y CB se cargan con la transmisión desactivada.</p>
+
+<h2 id="escribir">5. Escribir en la radio</h2>
+<p><kbd>Escribir en la radio</kbd> lee antes la radio y guarda una copia (<code>before-write</code>), escribe y vuelve a leer cada bloque para verificarlo. <b>Radio → Escribir solo canales</b> escribe canales y zonas. El programa solo cambia los bytes de los campos editados; lo que no conoce se conserva.</p>
+
+<h2 id="firmware">6. Firmware</h2>
+<p>La pestaña <b>Firmware</b> actualiza la radio por el cable usando el cargador de arranque del fabricante:</p>
+<ol>
+<li><kbd>Buscar en línea</kbd> muestra los firmware publicados en las versiones del proyecto (se comprueba su SHA-256), o <kbd>Desde fichero…</kbd> para un <code>.BTF</code> propio, por ejemplo el oficial de Radtel.</li>
+<li>Elige el puerto y pulsa <kbd>Flashear firmware</kbd>. La radio se reinicia en modo cargador, recibe el firmware y vuelve a arrancar.</li>
+<li>Si la radio no responde o no arranca, apágala, mantén pulsadas las <b>dos teclas laterales inferiores</b> mientras la enciendes y marca <b>La radio ya está en modo cargador</b>.</li>
+</ol>
+<p>También puedes flashear desde el navegador (Chrome o Edge) con el <a href="https://anatolbricoham.github.io/rt950pro-satellite-mode/flasher/">flasheador web</a>.</p>
+<div class="note">El firmware instalado <b>no se puede leer</b> desde la radio. Antes de cambiarlo, guarda el <code>.BTF</code> original (ver <a href="#backup">Copias de seguridad</a>). Para volver al firmware de Radtel, flashea su <code>.BTF</code> oficial.</div>
+
+<h2 id="satelites">7. Satélites</h2>
+<p>Pestaña <b>Satélites</b>: escribe tu locator, <kbd>Actualizar TLE</kbd> y <kbd>Calcular pases</kbd>. Con el firmware original, <kbd>Añadir</kbd> crea canales Doppler en split (AOS, A2, TCA, L2, LOS) y el informe dice cuándo cambiar de canal. Con el firmware custom, <kbd>Subir a la radio</kbd> carga TLE, frecuencias y pases, y la radio corrige el Doppler en tiempo real (menú Satellite o pulsación larga de <kbd>D</kbd>).</p>
+
+<h2 id="aprs">8. APRS</h2>
+<p>La pestaña APRS configura la baliza. Con el firmware custom hay mensajería de texto con acuse: menú <b>APRS Set → Messages</b> en la radio (bandeja, redactar con multipulsación, textos rápidos con <kbd>B</kbd>).</p>
+
+<h2 id="ficheros">9. Ficheros y formatos</h2>
+<table>
+<tr><th>Formato</th><th>Uso</th></tr>
+<tr><td><code>.rt950</code></td><td>Formato propio, sin pérdidas.</td></tr>
+<tr><td><code>.dat</code></td><td>Fichero del programa oficial (se guarda a partir de un .dat existente como plantilla).</td></tr>
+<tr><td>CSV nativo / CHIRP / RT-950 Editor</td><td>Canales; también zonas y FM/AM/SSB en el formato del Editor.</td></tr>
+<tr><td><code>.bin</code></td><td>Imagen binaria de los bloques, para comparar.</td></tr>
+</table>
+
+<h2 id="cli">10. Línea de comandos</h2>
+<pre>RT950Toolkit read  --port COM5 -o radio.rt950
+RT950Toolkit write --port COM5 radio.rt950 [--channels-only]
+RT950Toolkit country ES -o espana.rt950 [--locator IM98IB]
+RT950Toolkit country ES -i radio.rt950 --mode append -o radio+es.rt950
+RT950Toolkit flash --port COM5 firmware.BTF [--in-bootloader]
+RT950Toolkit sat all --locator IM98IB [--port COM5]</pre>
+
+<h2 id="problemas">11. Problemas frecuentes</h2>
+<table>
+<tr><th>Problema</th><th>Solución</th></tr>
+<tr><td>Windows SmartScreen: «Windows protegió su PC»</td><td>Pulsa <b>Más información → Ejecutar de todas formas</b>. El instalador está firmado con el certificado de BricoHams; para que Windows lo reconozca como editor, instala <code>BricoHams-CodeSigning.cer</code> (incluido en la versión) en «Personas de confianza» y «Editores de confianza». Mira también el fichero SHA256SUMS.</td></tr>
+<tr><td>«La radio no responde»</td><td>Cable bien encajado en la radio, radio encendida, puerto correcto y que ningún otro programa use el puerto.</td></tr>
+<tr><td>Linux: permiso denegado en /dev/ttyUSB0</td><td>Añade tu usuario al grupo <code>dialout</code> (o <code>uucp</code> en Arch) y vuelve a iniciar sesión.</td></tr>
+<tr><td>«Verificación fallida en …»</td><td>Vuelve a escribir. Si se repite, restaura la última copia (<b>Radio → Restaurar una copia</b>).</td></tr>
+<tr><td>Flasheo interrumpido</td><td>Modo cargador (dos teclas laterales inferiores al encender) y vuelve a flashear marcando «ya está en modo cargador».</td></tr>
+</table>
+
+<h2 id="backup">12. Copias de seguridad</h2>
+<h3>Configuración (codeplug)</h3>
+<ul>
+<li>Cada lectura y cada escritura guardan una copia con fecha en la carpeta de copias.</li>
+<li>Guarda además tu copia con <b>Archivo → Guardar</b> y, si usas el programa oficial, como <code>.dat</code>.</li>
+<li>Para volver atrás: <b>Radio → Restaurar una copia</b>.</li>
+<li>Copia la carpeta de copias a un USB o a la nube de vez en cuando.</li>
+</ul>
+<h3>Firmware</h3>
+<ul>
+<li>El firmware no se puede leer desde la radio: la copia es el fichero <code>.BTF</code> original.</li>
+<li>Antes de instalar el firmware custom, anota la versión de tu radio y guarda el <code>.BTF</code> oficial de esa versión (web de Radtel, o la carpeta <code>binary/</code> del repositorio para V0.15–V0.27).</li>
+<li>Para volver al original: pestaña Firmware → Desde fichero → .BTF oficial → Flashear.</li>
+</ul>
+<h3>Calibración</h3>
+<p>La calibración de fábrica está en la memoria de la radio; ni este programa ni el firmware custom la modifican. No borres la memoria completa con otras herramientas.</p>
+<h3>Antes de cada operación</h3>
+<p>Batería por encima del 50 %, cable bien conectado y no desconectes durante la escritura o el flasheo.</p>
+
+<h2 id="aviso">13. Aviso de responsabilidad</h2>
+<p>BricoHams RT-950 Toolkit, el firmware custom, el flasheador web y los codeplugs precargados se distribuyen <b>«tal cual», sin garantía de ningún tipo</b>, bajo la licencia GPL-3.0. No son productos de Radtel ni están aprobados por el fabricante.</p>
+<ul>
+<li>Programar la radio o cambiar su firmware puede dejarla inutilizable, borrar su configuración o su calibración y anular la garantía. Lo haces bajo tu propia responsabilidad.</li>
+<li>El firmware custom es experimental. Haz las pruebas de transmisión con carga artificial.</li>
+<li>Los codeplugs por país usan datos públicos que pueden estar incompletos o desactualizados.</li>
+<li>Aeronáutica, PMR446 y CB se cargan solo para recepción. Cada usuario es responsable de cumplir la normativa de su país y las condiciones de su licencia.</li>
+<li>Los autores y BricoHams no se hacen responsables de daños en equipos, pérdida de datos, interferencias ni de cualquier otro perjuicio derivado del uso de este software.</li>
+</ul>
+
+<h2 id="creditos">14. Créditos</h2>
+<ul>
+<li>Un proyecto de <b>BricoHams</b> — Radioafición · Hazlo tú mismo.</li>
+<li>Firmware abierto de base: <a href="https://github.com/Hertzz58/Radtel-RT950-Pro-Firmware">Hertzz58/Radtel-RT950-Pro-Firmware</a> (GPL-3.0).</li>
+<li>Referencia del protocolo de programación: RT-950/950Pro Editor de KK4OXN (MIT).</li>
+<li>Aeropuertos: <a href="https://ourairports.com/">OurAirports</a> (dominio público). Repetidores: <a href="https://www.ure.es/repetidores/">URE</a> y <a href="https://ukrepeater.net/">ukrepeater.net</a> (RSGB ETCC).</li>
+</ul>
+</main>
+</div>
+<footer>BricoHams RT-950 Toolkit · GPL-3.0 · <a href="https://github.com/anatolbricoham/rt950pro-satellite-mode">github.com/anatolbricoham/rt950pro-satellite-mode</a></footer>
+</body>
+</html>

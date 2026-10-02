@@ -1,0 +1,52 @@
+﻿AVISO DE RESPONSABILIDAD
+
+BricoHams RT-950 Toolkit, el firmware custom, el flasheador web y los
+codeplugs precargados se distribuyen "TAL CUAL", sin garantía de ningún tipo,
+bajo la licencia GPL-3.0. No son productos de Radtel ni están aprobados por
+el fabricante.
+
+• Programar la radio o cambiar su firmware puede dejarla inutilizable,
+  borrar su configuración o su calibración y anular la garantía del
+  fabricante. Lo haces bajo tu propia responsabilidad.
+• El firmware custom está en fase experimental y no se ha probado en todas
+  las radios. Haz las pruebas de transmisión siempre con carga artificial.
+• Los codeplugs por país se generan con datos públicos (URE, ukrepeater.net,
+  OurAirports) que pueden estar incompletos o desactualizados. Compruébalos
+  antes de usarlos.
+• Las frecuencias aeronáuticas, de PMR446 y de banda ciudadana se cargan
+  solo para recepción. Transmitir en ellas con este equipo no está
+  permitido. Cada usuario es responsable de cumplir la normativa de su país
+  y las condiciones de su licencia de radioaficionado.
+• Los autores y BricoHams no se hacen responsables de daños en equipos,
+  pérdida de datos, interferencias ni de cualquier otro perjuicio derivado
+  del uso de este software.
+
+Antes de escribir en la radio o actualizar su firmware, haz copia de
+seguridad (menú Ayuda → Copias de seguridad).
+
+------------------------------------------------------------
+
+DISCLAIMER
+
+BricoHams RT-950 Toolkit, the custom firmware, the web flasher and the
+preloaded codeplugs are provided "AS IS", without warranty of any kind,
+under the GPL-3.0 licence. They are not Radtel products and are not
+endorsed by the manufacturer.
+
+• Programming the radio or changing its firmware can make it unusable, erase
+  its configuration or calibration and void the manufacturer's warranty.
+  You do it at your own risk.
+• The custom firmware is experimental and has not been tested on every
+  radio. Always test transmission into a dummy load.
+• Country codeplugs are built from public data (URE, ukrepeater.net,
+  OurAirports) that may be incomplete or out of date. Check them before use.
+• Air band, PMR446 and citizens' band frequencies are loaded for reception
+  only. Transmitting on them with this radio is not allowed. Every user is
+  responsible for complying with the regulations of their country and the
+  terms of their amateur licence.
+• The authors and BricoHams accept no liability for damaged equipment, lost
+  data, interference or any other harm arising from the use of this
+  software.
+
+Before writing to the radio or updating its firmware, make a backup
+(Help menu → Backups).

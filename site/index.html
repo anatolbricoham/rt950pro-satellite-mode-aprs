@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BricoHams RT-950 Toolkit</title>
+<meta name="description" content="Programador, codeplugs por país, firmware y modo satélite para Radtel RT-950 / RT-950 Pro.">
+<link rel="icon" href="assets/icon_64.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="top">
+  <img src="assets/bricohams_logo.svg" alt="BricoHams" class="logo">
+  <div><h1>RT-950 Toolkit</h1><p class="tag" data-i18n="tag">Radioafición · Hazlo tú mismo</p></div>
+  <nav class="lang"><button data-lang="es">ES</button><button data-lang="en">EN</button></nav>
+</header>
+<main>
+  <section class="hero">
+    <div>
+      <h2 data-i18n="h">Programa tu Radtel RT-950 / RT-950 Pro en Windows y Linux</h2>
+      <p data-i18n="lead">Editor de configuración, codeplugs listos para España y Reino Unido, actualización de firmware desde la aplicación o desde el navegador, modo satélite con Doppler y mensajería APRS en el firmware custom.</p>
+      <p><a class="button" href="#descargas" data-i18n="dl">Descargar</a> <a class="button ghost" href="flasher/" data-i18n="fl">Flasheador web</a></p>
+    </div>
+    <img src="assets/screenshot.png" alt="BricoHams RT-950 Toolkit">
+  </section>
+
+  <h2 id="descargas" data-i18n="downloads">Descargas</h2>
+  <div class="card">
+    <p id="rel" class="muted" data-i18n="relload">Buscando la última versión…</p>
+    <table id="assets"></table>
+    <p class="small muted" data-i18n="relnote">Los instaladores de Windows están firmados por BricoHams. Si Windows avisa de un editor desconocido, instala el certificado <code>BricoHams-CodeSigning.cer</code> de la versión o pulsa «Más información → Ejecutar de todas formas». Comprueba los ficheros con <code>SHA256SUMS</code>.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card"><h3 data-i18n="f1">Codeplug</h3><p data-i18n="f1t">Leer, escribir y verificar. Canales, zonas, VFO, ajustes, DTMF, FM/AM/SSB y APRS. Ficheros .dat del CPS y CSV de CHIRP y RT-950 Editor. Copias automáticas antes de escribir.</p></div>
+    <div class="card"><h3 data-i18n="f2">Codeplugs por país</h3><p data-i18n="f2t">España: zonas EA1–EA9 con repetidores (URE) y aeropuertos, más PMR446 y CB. Reino Unido: regiones ETCC con repetidores y aeropuertos, símplex, PMR446 y CB. Sobrescribir o añadir a tus canales.</p></div>
+    <div class="card"><h3 data-i18n="f3">Firmware</h3><p data-i18n="f3t">Flashea el firmware custom o vuelve al de Radtel desde la aplicación o desde Chrome/Edge con el flasheador web.</p></div>
+    <div class="card"><h3 data-i18n="f4">Satélites y APRS</h3><p data-i18n="f4t">Pases, canales Doppler para el firmware original y seguimiento SGP4 en tiempo real con el firmware custom, que también añade mensajería APRS con acuse.</p></div>
+  </div>
+
+  <h2 data-i18n="docs">Documentación</h2>
+  <div class="card">
+    <ul>
+      <li><a href="help/es/index.html" id="manual" data-i18n="manual">Manual de uso</a></li>
+      <li><a href="help/es/index.html#backup" id="backup" data-i18n="backup">Copias de seguridad del firmware y de la configuración</a></li>
+      <li><a href="help/es/index.html#aviso" id="disc" data-i18n="disc">Aviso de responsabilidad</a></li>
+      <li><a href="https://github.com/anatolbricoham/rt950pro-satellite-mode" data-i18n="src">Código fuente y documentación técnica</a></li>
+    </ul>
+  </div>
+
+  <div class="warn small" data-i18n="legal">Software «tal cual», sin garantía (GPL-3.0). No es un producto de Radtel. Cambiar el firmware o la configuración puede dejar la radio inutilizable: haz copia de seguridad. Aeronáutica, PMR446 y CB se cargan solo para recepción.</div>
+</main>
+<footer>BricoHams · GPL-3.0 · <a href="https://github.com/anatolbricoham/rt950pro-satellite-mode">GitHub</a></footer>
+<script src="i18n.js"></script>
+<script>
+const T = {en: {
+  tag: "Amateur radio · Do it yourself",
+  h: "Program your Radtel RT-950 / RT-950 Pro on Windows and Linux",
+  lead: "Codeplug editor, ready-made codeplugs for Spain and the United Kingdom, firmware updates from the application or the browser, satellite mode with Doppler and APRS messaging in the custom firmware.",
+  dl: "Download", fl: "Web flasher", downloads: "Downloads", relload: "Looking for the latest release…",
+  relnote: "Windows installers are signed by BricoHams. If Windows warns about an unknown publisher, install the release's <code>BricoHams-CodeSigning.cer</code> certificate or click \"More info → Run anyway\". Check the files with <code>SHA256SUMS</code>.",
+  f1: "Codeplug", f1t: "Read, write and verify. Channels, zones, VFO, settings, DTMF, FM/AM/SSB and APRS. CPS .dat files and CHIRP / RT-950 Editor CSV. Automatic backups before writing.",
+  f2: "Country codeplugs", f2t: "Spain: zones EA1–EA9 with repeaters (URE) and airports, plus PMR446 and CB. United Kingdom: ETCC regions with repeaters and airports, simplex, PMR446 and CB. Overwrite or add to your channels.",
+  f3: "Firmware", f3t: "Flash the custom firmware or go back to Radtel's from the application or from Chrome/Edge with the web flasher.",
+  f4: "Satellites and APRS", f4t: "Passes, Doppler channels for the stock firmware and real-time SGP4 tracking with the custom firmware, which also adds APRS messaging with acknowledgements.",
+  docs: "Documentation", manual: "User manual", backup: "Backing up the firmware and the configuration", disc: "Disclaimer",
+  src: "Source code and technical documentation",
+  legal: "Software \"as is\", without warranty (GPL-3.0). Not a Radtel product. Changing the firmware or the configuration can make the radio unusable: make a backup. Air band, PMR446 and CB are loaded for reception only.",
+}};
+const KIND = {es: [["Setup", "Windows (instalador)"], [".deb", "Debian / Ubuntu"], [".pkg.tar.zst", "Arch Linux"],
+                   ["linux-x64", "Linux portable"], [".BTF", "Firmware"], ["codeplug-ES", "Codeplug España"],
+                   ["codeplug-GB", "Codeplug Reino Unido"], [".cer", "Certificado de firma"], ["SHA256SUMS", "Sumas SHA-256"]],
+              en: [["Setup", "Windows (installer)"], [".deb", "Debian / Ubuntu"], [".pkg.tar.zst", "Arch Linux"],
+                   ["linux-x64", "Linux portable"], [".BTF", "Firmware"], ["codeplug-ES", "Spain codeplug"],
+                   ["codeplug-GB", "United Kingdom codeplug"], [".cer", "Signing certificate"], ["SHA256SUMS", "SHA-256 sums"]]};
+let release = null;
+function render(l) {
+  for (const id of ["manual", "backup", "disc"]) {
+    const a = document.getElementById(id); a.href = a.getAttribute("href").replace(/help\/(es|en)\//, `help/${l}/`);
+  }
+  document.getElementById("disc").href = `help/${l}/index.html#${l === "es" ? "aviso" : "disclaimer"}`;
+  if (!release) return;
+  const rel = document.getElementById("rel");
+  rel.innerHTML = `<b>${release.tag_name}</b> · ${release.published_at.slice(0, 10)} · <a href="${release.html_url}">${l === "es" ? "notas de la versión" : "release notes"}</a>`;
+  const rows = [];
+  for (const [key, label] of KIND[l]) {
+    for (const a of release.assets.filter(a => a.name.includes(key) && !a.name.endsWith(".sha256"))) {
+      rows.push(`<tr><td>${label}</td><td><a href="${a.browser_download_url}">${a.name}</a></td><td>${Math.max(1, Math.round(a.size / 1024))} KB</td></tr>`);
+    }
+  }
+  document.getElementById("assets").innerHTML = rows.join("");
+}
+BH.init(T, render);
+fetch("https://api.github.com/repos/anatolbricoham/rt950pro-satellite-mode/releases/latest")
+  .then(r => r.ok ? r.json() : Promise.reject(r.status))
+  .then(j => { release = j; render(BH.lang); })
+  .catch(() => { document.getElementById("rel").innerHTML =
+    `<a href="https://github.com/anatolbricoham/rt950pro-satellite-mode/releases">GitHub Releases</a>`; });
+</script>
+</body>
+</html>

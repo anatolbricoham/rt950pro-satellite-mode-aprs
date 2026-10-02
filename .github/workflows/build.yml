@@ -1,0 +1,218 @@
+name: build
+
+on:
+  push:
+    branches: [main, "feature/**"]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  firmware:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: ARM toolchain
+        run: sudo apt-get update && sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi
+      - name: Build firmware (.bin, .hex, .BTF for the bootloader)
+        run: |
+          make -j4
+          make btf
+          VER=$(python3 -c "import sys; sys.path.insert(0,'pc'); import rt950_toolkit as t; print(t.__version__)")
+          mkdir -p out
+          cp build/rt950-custom.BTF out/rt950-bricohams-$VER.BTF
+          cp build/rt950-custom.bin out/rt950-bricohams-$VER.bin
+          cp build/rt950-custom.hex out/rt950-bricohams-$VER.hex
+          (cd out && sha256sum * > firmware.sha256 && for f in *.BTF; do sha256sum "$f" | cut -d' ' -f1 > "$f.sha256"; done)
+      - uses: actions/upload-artifact@v4
+        with: {name: firmware, path: out/*}
+
+  tests:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - uses: actions/setup-node@v4
+        with: {node-version: "22"}
+      - run: pip install sgp4 skyfield pyserial pillow aprslib playwright
+      - run: python -m playwright install --with-deps chromium
+      - name: Firmware host tests + toolkit tests
+        run: sh tests/run_tests.sh
+      - name: Web / Android programmer and web flasher
+        run: |
+          make btf || true
+          python tools/export_web_meta.py
+          python pc/tests/test_web_core.py
+          node tests/web/native_ble.test.cjs
+          node tests/web/flasher.test.cjs build/rt950-custom.BTF || node tests/web/flasher.test.cjs binary/RT_950Pro_V0.27_260203/RT_950Pro_V0.27_260203.BTF
+          python tests/web/app_e2e.py
+
+  windows:
+    runs-on: windows-latest
+    env:
+      HAS_CERT: ${{ secrets.WINDOWS_CERT_PFX != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Dependencies (PyInstaller bootloader built from source)
+        run: |
+          pip install pyserial pillow sgp4
+          pip install --no-binary pyinstaller pyinstaller
+      - name: Build (one folder + portable)
+        working-directory: pc
+        shell: bash
+        run: |
+          python packaging/windows/make_version_info.py
+          pyinstaller --clean --noconfirm rt950_toolkit.spec
+          BH_ONEFILE=1 pyinstaller --noconfirm --distpath dist/portable rt950_toolkit.spec
+      - name: Sign executables
+        if: env.HAS_CERT == 'true'
+        env:
+          CERT: ${{ secrets.WINDOWS_CERT_PFX }}
+          CERT_PASSWORD: ${{ secrets.WINDOWS_CERT_PASSWORD }}
+        shell: pwsh
+        run: |
+          [IO.File]::WriteAllBytes("$env:RUNNER_TEMP\cert.pfx", [Convert]::FromBase64String($env:CERT))
+          $signtool = Get-ChildItem "C:\Program Files (x86)\Windows Kits\10\bin\*\x64\signtool.exe" | Sort-Object FullName | Select-Object -Last 1
+          echo "SIGNTOOL=$($signtool.FullName)" >> $env:GITHUB_ENV
+          & $signtool.FullName sign /f "$env:RUNNER_TEMP\cert.pfx" /p $env:CERT_PASSWORD /fd SHA256 /tr http://timestamp.digicert.com /td SHA256 /d "BricoHams RT-950 Toolkit" pc\dist\RT950Toolkit\RT950Toolkit.exe pc\dist\portable\RT950Toolkit.exe
+      - name: Installer (Inno Setup)
+        shell: pwsh
+        run: |
+          $ver = python -c "import sys; sys.path.insert(0,'pc'); import rt950_toolkit as t; print(t.__version__)"
+          choco install innosetup -y --no-progress | Out-Null
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" /DAppVersion=$ver /DSrcDir=..\..\dist\RT950Toolkit pc\packaging\windows\installer.iss
+          if ($env:SIGNTOOL) {
+            & $env:SIGNTOOL sign /f "$env:RUNNER_TEMP\cert.pfx" /p "${{ secrets.WINDOWS_CERT_PASSWORD }}" /fd SHA256 /tr http://timestamp.digicert.com /td SHA256 /d "BricoHams RT-950 Toolkit" "pc\dist\BricoHams-RT950-Toolkit-Setup-$ver.exe"
+          }
+          Move-Item pc\dist\portable\RT950Toolkit.exe "pc\dist\BricoHams-RT950-Toolkit-$ver-windows-portable.exe"
+      - name: Smoke test
+        shell: bash
+        run: ./pc/dist/RT950Toolkit/RT950Toolkit.exe country ES -o es.rt950 && test -s es.rt950
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows
+          path: |
+            pc/dist/BricoHams-RT950-Toolkit-Setup-*.exe
+            pc/dist/BricoHams-RT950-Toolkit-*-windows-portable.exe
+
+  linux:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install pyinstaller pyserial pillow sgp4
+      - name: Portable executable, .deb, country codeplugs
+        run: |
+          VER=$(python -c "import sys; sys.path.insert(0,'pc'); import rt950_toolkit as t; print(t.__version__)")
+          cd pc && BH_ONEFILE=1 pyinstaller --clean --noconfirm rt950_toolkit.spec && cd ..
+          mkdir -p out
+          cp pc/dist/RT950Toolkit out/BricoHams-RT950-Toolkit-$VER-linux-x64
+          ./out/BricoHams-RT950-Toolkit-$VER-linux-x64 country GB -o /tmp/gb.rt950
+          sh pc/packaging/linux/build_deb.sh out
+          python tools/build_site.py --out /tmp/site
+          cp /tmp/site/codeplugs/* out/
+      - uses: actions/upload-artifact@v4
+        with: {name: linux, path: out/*}
+
+  arch:
+    runs-on: ubuntu-24.04
+    container: archlinux:latest
+    steps:
+      - name: Tools
+        run: pacman -Syu --noconfirm base-devel git python python-pip tk
+      - uses: actions/checkout@v4
+      - name: makepkg
+        run: |
+          useradd -m builder
+          chown -R builder "$GITHUB_WORKSPACE"
+          cd pc/packaging/arch
+          su builder -c "BH_LOCAL=1 makepkg --noconfirm -f"
+          pacman -U --noconfirm ./*.pkg.tar.zst
+          bricohams-rt950-toolkit country ES -o /tmp/es.rt950
+      - uses: actions/upload-artifact@v4
+        with: {name: arch, path: pc/packaging/arch/*.pkg.tar.zst}
+
+  android:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: "21"}
+      - uses: actions/setup-node@v4
+        with: {node-version: "22"}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Web assets
+        run: python tools/export_web_meta.py
+      - name: APK
+        working-directory: mobile
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE }}
+          BH_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          BH_KEY_ALIAS: bricohams
+        run: |
+          npm ci
+          npx cap sync android
+          VER=$(node -p "require('./package.json').version")
+          cd android
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/bh.jks"
+            export BH_KEYSTORE="$RUNNER_TEMP/bh.jks"
+            ./gradlew --no-daemon assembleRelease
+            cp app/build/outputs/apk/release/app-release.apk "$GITHUB_WORKSPACE/BricoHams-RT950-Programmer-$VER.apk"
+          else
+            ./gradlew --no-daemon assembleDebug
+            cp app/build/outputs/apk/debug/app-debug.apk "$GITHUB_WORKSPACE/BricoHams-RT950-Programmer-$VER-debug.apk"
+          fi
+      - uses: actions/upload-artifact@v4
+        with: {name: android, path: "BricoHams-RT950-Programmer-*.apk"}
+
+  pages:
+    # the github-pages environment only accepts the default branch
+    if: github.ref == 'refs/heads/main'
+    needs: [firmware, tests]
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - uses: actions/download-artifact@v4
+        with: {name: firmware, path: fw}
+      - run: python tools/build_site.py --firmware "$(ls fw/*.BTF | head -1)" --out site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: site}
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [firmware, tests, windows, linux, arch, android]
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {path: dist, merge-multiple: true}
+      - name: Checksums and certificate
+        run: |
+          cp pc/packaging/windows/BricoHams-CodeSigning.cer pc/packaging/windows/install-certificate.ps1 dist/
+          cd dist && rm -f firmware.sha256 && sha256sum $(ls | grep -v '\.sha256$') > SHA256SUMS && ls -la
+      - uses: softprops/action-gh-release@v2
+        with:
+          body_path: RELEASE_NOTES.md
+          files: dist/*

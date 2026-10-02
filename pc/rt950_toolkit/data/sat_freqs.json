@@ -1,0 +1,57 @@
+{
+  "_comment": [
+    "Satellite frequency database for rt950_sat.py. Edit freely.",
+    "Frequencies in MHz, tones in Hz (0 = none). 'match' = NORAD id or name substrings (TLE line 0).",
+    "mode: FM | FM_DATA | LIN_INV | LIN | RX_ONLY.  flags: scheduled, sunlit_only.",
+    "Sources: AMSAT 'Live FM Satellites' (amsat.org/live-fm-satellites), AMSAT-EA, Orbital Space. Check before use: transponders change status."
+  ],
+  "satellites": [
+    {"name": "ISS VOICE", "short": "ISS", "norad": 25544, "match": ["ISS (ZARYA)", "ISS"], "mode": "FM",
+     "downlink": 437.800, "uplink": 145.990, "ctcss_up": 67.0, "ctcss_down": 0, "arm_tone": 0,
+     "flags": ["scheduled"], "info": "ARISS X-band rptr 67Hz", "enabled": true, "favorite": true},
+
+    {"name": "ISS APRS", "short": "ISSAPRS", "norad": 25544, "match": ["ISS (ZARYA)", "ISS"], "mode": "FM_DATA",
+     "downlink": 145.825, "uplink": 145.825, "ctcss_up": 0, "ctcss_down": 0, "arm_tone": 0,
+     "flags": ["scheduled"], "info": "APRS digi 1200 ARISS", "enabled": true, "favorite": false},
+
+    {"name": "SO-50", "norad": 27607, "match": ["SO-50", "SAUDISAT 1C"], "mode": "FM",
+     "downlink": 436.795, "uplink": 145.850, "ctcss_up": 67.0, "ctcss_down": 0, "arm_tone": 74.4,
+     "flags": [], "info": "Arm 74.4Hz 2s, 10min", "enabled": true, "favorite": true},
+
+    {"name": "AO-91", "norad": 43017, "match": ["AO-91", "FOX-1B", "RADFXSAT"], "mode": "FM",
+     "downlink": 145.960, "uplink": 435.250, "ctcss_up": 67.0, "ctcss_down": 0, "arm_tone": 0,
+     "flags": ["sunlit_only"], "info": "Sunlight only (battery)", "enabled": true, "favorite": true},
+
+    {"name": "AO-123", "norad": 61781, "match": ["AO-123", "ASRTU-1"], "mode": "FM",
+     "downlink": 435.400, "uplink": 145.850, "ctcss_up": 67.0, "ctcss_down": 0, "arm_tone": 0,
+     "flags": [], "info": "ASRTU-1 FM 67Hz", "enabled": true, "favorite": true},
+
+    {"name": "PO-101", "norad": 43678, "match": ["PO-101", "DIWATA-2"], "mode": "FM",
+     "downlink": 145.900, "uplink": 437.500, "ctcss_up": 141.3, "ctcss_down": 0, "arm_tone": 0,
+     "flags": ["scheduled"], "info": "Diwata-2 schedule 141.3", "enabled": true, "favorite": false},
+
+    {"name": "CAS-3H", "norad": 40908, "match": ["LILACSAT-2", "CAS-3H"], "mode": "FM",
+     "downlink": 437.200, "uplink": 144.350, "ctcss_up": 0, "ctcss_down": 0, "arm_tone": 0,
+     "flags": ["scheduled"], "info": "LilacSat-2 no schedule", "enabled": true, "favorite": false},
+
+    {"name": "IO-86", "norad": 40931, "match": ["LAPAN-A2", "IO-86"], "mode": "FM",
+     "downlink": 435.880, "uplink": 145.880, "ctcss_up": 88.5, "ctcss_down": 0, "arm_tone": 0,
+     "flags": ["scheduled"], "info": "Equatorial orbit 88.5", "enabled": true, "favorite": false},
+
+    {"name": "RS95S", "norad": 67291, "match": ["QMR-KWT-2", "QMR-KWT 2", "RS95S"], "mode": "FM",
+     "downlink": 436.950, "uplink": 145.920, "ctcss_up": 67.0, "ctcss_down": 0, "arm_tone": 0,
+     "flags": ["scheduled"], "info": "QMR-KWT-2 sched/SSTV", "enabled": true, "favorite": false},
+
+    {"name": "TEVEL2", "norad": 0, "match": ["TEVEL2"], "mode": "FM", "expand": true,
+     "downlink": 436.400, "uplink": 145.970, "ctcss_up": 0, "ctcss_down": 0, "arm_tone": 0,
+     "flags": ["scheduled"], "info": "TEVEL2 FM when on", "enabled": false, "favorite": false},
+
+    {"name": "RS-44", "norad": 44909, "match": ["RS-44", "DOSAAF-85"], "mode": "LIN_INV",
+     "downlink": 435.625, "uplink": 145.950, "passband": 30, "ctcss_up": 0, "ctcss_down": 0, "arm_tone": 0,
+     "flags": [], "info": "Linear SSB/CW: track only", "enabled": true, "favorite": false},
+
+    {"name": "FO-29", "norad": 24278, "match": ["FO-29", "JAS-2"], "mode": "LIN_INV",
+     "downlink": 435.850, "uplink": 145.950, "passband": 100, "ctcss_up": 0, "ctcss_down": 0, "arm_tone": 0,
+     "flags": ["scheduled"], "info": "Linear SSB/CW: track only", "enabled": false, "favorite": false}
+  ]
+}

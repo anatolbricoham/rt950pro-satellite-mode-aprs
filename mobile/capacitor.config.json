@@ -1,0 +1,19 @@
+{
+  "appId": "es.bricohams.rt950",
+  "appName": "BricoHams RT-950",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#23272B"
+  },
+  "plugins": {
+    "BluetoothLe": {
+      "displayStrings": {
+        "scanning": "Buscando RT-950…",
+        "cancel": "Cancelar",
+        "availableDevices": "Radios disponibles",
+        "noDeviceFound": "No se encontró ninguna radio"
+      }
+    }
+  }
+}

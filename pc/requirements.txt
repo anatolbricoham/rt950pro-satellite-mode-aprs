@@ -1,0 +1,3 @@
+pyserial>=3.5
+sgp4>=2.20       # satellite predictions
+pillow>=9.0      # optional: boot logo conversion of JPG/PNG (GIF/PPM work without it)

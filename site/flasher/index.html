@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RT-950 Web Flasher — BricoHams</title>
+<link rel="icon" href="../assets/icon_64.png">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<header class="top">
+  <a href="../"><img src="../assets/bricohams_logo.svg" alt="BricoHams" class="logo"></a>
+  <div><h1 data-i18n="title">Flasheador web RT-950</h1><p class="tag" data-i18n="tag">Radioafición · Hazlo tú mismo</p></div>
+  <nav class="lang"><button data-lang="es">ES</button><button data-lang="en">EN</button></nav>
+</header>
+
+<main class="narrow">
+  <div id="nosupport" class="warn" hidden data-i18n="nosupport">
+    Este navegador no permite acceder al puerto serie. Usa Chrome, Edge u Opera en un ordenador (Web Serial),
+    o la aplicación BricoHams RT-950 Toolkit para Windows y Linux.
+  </div>
+
+  <section class="card">
+    <h2><span class="n">1</span> <span data-i18n="s1">Elige el firmware</span></h2>
+    <div id="fwlist" class="fwlist"><p class="muted" data-i18n="loading">Cargando la lista de firmware…</p></div>
+    <label class="file"><input type="file" id="file" accept=".btf,.BTF"> <span data-i18n="ownfile">…o elige un fichero .BTF de tu ordenador</span></label>
+    <p id="fwinfo" class="muted"></p>
+  </section>
+
+  <section class="card">
+    <h2><span class="n">2</span> <span data-i18n="s2">Prepara la radio</span></h2>
+    <ul>
+      <li data-i18n="p1">Batería cargada (más del 50 %) y cable de programación bien encajado.</li>
+      <li data-i18n="p2">Cierra cualquier otro programa que use el puerto (CPS, Toolkit, CHIRP).</li>
+      <li data-i18n="p3">El firmware actual no se puede leer desde la radio: guarda el .BTF original antes de cambiarlo.</li>
+    </ul>
+    <label><input type="checkbox" id="inboot"> <span data-i18n="inboot">La radio ya está en modo cargador (encendida manteniendo las dos teclas laterales inferiores)</span></label>
+  </section>
+
+  <section class="card">
+    <h2><span class="n">3</span> <span data-i18n="s3">Acepta y flashea</span></h2>
+    <details class="disclaimer"><summary data-i18n="dsum">Aviso de responsabilidad (léelo)</summary>
+      <div data-i18n="dtext" data-html="1">
+        <p>Este flasheador, el firmware custom y la aplicación se distribuyen <b>«tal cual», sin garantía</b>, bajo la licencia GPL-3.0. No son productos de Radtel.</p>
+        <p>Cambiar el firmware puede dejar la radio inutilizable, borrar su configuración y anular la garantía. El firmware custom es experimental: prueba siempre la transmisión con carga artificial. Cada usuario es responsable de cumplir la normativa de su país. Los autores y BricoHams no se hacen responsables de daños, pérdida de datos ni interferencias.</p>
+      </div>
+    </details>
+    <label><input type="checkbox" id="accept"> <span data-i18n="accept">He leído el aviso, tengo copia del firmware original y acepto la responsabilidad.</span></label>
+    <div class="actions">
+      <button id="go" class="primary" disabled data-i18n="go">Conectar y flashear</button>
+    </div>
+    <progress id="prog" max="100" value="0" hidden></progress>
+    <pre id="log" class="log" hidden></pre>
+  </section>
+
+  <p class="muted small"><a href="../help/es/index.html#firmware" id="helplink" data-i18n="help">Manual: firmware y copias de seguridad</a></p>
+</main>
+
+<footer>BricoHams RT-950 Toolkit · GPL-3.0 · <a href="https://github.com/anatolbricoham/rt950pro-satellite-mode">GitHub</a></footer>
+
+<script src="rt950-flasher.js"></script>
+<script src="../i18n.js"></script>
+<script>
+const T = {
+  es: {},
+  en: {
+    title: "RT-950 web flasher", tag: "Amateur radio · Do it yourself",
+    nosupport: "This browser cannot access the serial port. Use Chrome, Edge or Opera on a computer (Web Serial), or the BricoHams RT-950 Toolkit application for Windows and Linux.",
+    s1: "Choose the firmware", loading: "Loading the firmware list…", ownfile: "…or choose a .BTF file from your computer",
+    s2: "Prepare the radio", p1: "Battery charged (above 50 %) and programming cable firmly inserted.",
+    p2: "Close any other program using the port (CPS, Toolkit, CHIRP).",
+    p3: "The current firmware cannot be read from the radio: keep the original .BTF before changing it.",
+    inboot: "Radio already in bootloader mode (switched on holding the two lower side keys)",
+    s3: "Accept and flash", dsum: "Disclaimer (read it)",
+    dtext: "<p>This flasher, the custom firmware and the application are provided <b>\"as is\", without warranty</b>, under the GPL-3.0 licence. They are not Radtel products.</p><p>Changing the firmware can make the radio unusable, erase its configuration and void the warranty. The custom firmware is experimental: always test transmission into a dummy load. Every user is responsible for complying with the regulations of their country. The authors and BricoHams accept no liability for damage, lost data or interference.</p>",
+    accept: "I have read the disclaimer, I keep a copy of the original firmware and I accept the responsibility.",
+    go: "Connect and flash", help: "Manual: firmware and backups",
+    nolist: "No published firmware list on this site yet: choose a local file.",
+    done: "Done. The radio restarts with the new firmware.", choose: "Choose a firmware first.",
+    custom: "Custom firmware (BricoHams)", stock: "Radtel stock firmware",
+  },
+};
+const ES = {nolist: "Todavía no hay lista de firmware publicada en esta web: elige un fichero local.",
+  done: "Terminado. La radio se reinicia con el nuevo firmware.", choose: "Elige primero un firmware.",
+  custom: "Firmware custom (BricoHams)", stock: "Firmware original de Radtel"};
+const t = k => (BH.lang === "en" ? T.en[k] : ES[k]) || k;
+BH.init(T, l => { document.getElementById("helplink").href = `../help/${l}/index.html#firmware`; });
+
+let fw = null, fwName = "";
+const $ = id => document.getElementById(id);
+const log = m => { const el = $("log"); el.hidden = false; el.textContent += m + "\n"; el.scrollTop = el.scrollHeight; };
+const update = () => { $("go").disabled = !(fw && $("accept").checked && "serial" in navigator); };
+
+async function sha256(bytes) {
+  const h = await crypto.subtle.digest("SHA-256", bytes);
+  return Array.from(new Uint8Array(h)).map(b => b.toString(16).padStart(2, "0")).join("");
+}
+async function setFirmware(bytes, name, expected) {
+  try {
+    const info = RT950.firmwareInfo(bytes);
+    const sum = await sha256(bytes);
+    if (expected && sum !== expected) throw new Error("SHA-256 mismatch");
+    fw = bytes; fwName = name;
+    $("fwinfo").textContent = `${name}: ${info.model}, ${info.size} bytes, ${info.blocks} blocks · SHA-256 ${sum.slice(0, 16)}…`;
+  } catch (e) { fw = null; $("fwinfo").textContent = "✗ " + e.message; }
+  update();
+}
+
+if (!("serial" in navigator)) $("nosupport").hidden = false;
+$("accept").onchange = update;
+$("file").onchange = async e => {
+  const f = e.target.files[0];
+  if (f) await setFirmware(new Uint8Array(await f.arrayBuffer()), f.name);
+};
+
+fetch("../firmware/manifest.json").then(r => r.ok ? r.json() : Promise.reject()).then(list => {
+  const box = $("fwlist"); box.innerHTML = "";
+  for (const item of list) {
+    const b = document.createElement("button");
+    b.className = "fw " + item.kind;
+    b.innerHTML = `<b>${item.kind === "stock" ? t("stock") : t("custom")}</b> ${item.version}<br><small>${item.file} · ${Math.round(item.size / 1024)} KB</small>`;
+    b.onclick = async () => {
+      document.querySelectorAll(".fw").forEach(x => x.classList.remove("sel")); b.classList.add("sel");
+      const bytes = new Uint8Array(await (await fetch("../firmware/" + item.file)).arrayBuffer());
+      await setFirmware(bytes, item.file, item.sha256);
+    };
+    box.appendChild(b);
+  }
+}).catch(() => { $("fwlist").innerHTML = `<p class="muted">${t("nolist")}</p>`; });
+
+$("go").onclick = async () => {
+  if (!fw) { alert(t("choose")); return; }
+  let port, tr;
+  try {
+    port = await navigator.serial.requestPort();
+    tr = new RT950.WebSerialTransport(port);
+    await tr.open();
+    $("prog").hidden = false; $("go").disabled = true;
+    const f = new RT950.Rt950Flasher(tr, log);
+    await f.flash(fw, {enterBootloader: !$("inboot").checked,
+                       progress: (d, n) => { $("prog").value = Math.round(100 * d / n); }});
+    log("✓ " + t("done"));
+  } catch (e) { log("✗ " + e.message); }
+  finally { if (tr) await tr.close(); update(); }
+};
+</script>
+</body>
+</html>

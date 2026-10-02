@@ -1,0 +1,125 @@
+ED1YAK	438.725 MHz FM -7.6 MHz (RU698 - R73) - IN53VL - URE El Ferrol
+ED1YAN	438.775 MHz FM -7.6 MHz (RU702 - R75) Subtono 88,5 Hz - IN71QX - Asociación Palentina de Radioaficionados
+ED1YAP	438.775 MHz FM -7.6 MHz (RU702 - R75) - IN62BO - R.C. Lugo
+ED1YAT	438.650 MHz FM -7.6 MHz (RU692 - R70) - IN83AJ - R.C. Radioaficionados Montañeses
+ED1YAU	438.850 MHz FM -7.6 MHz (RU708 - R78) - IN73TA - R.C. Radioaficionados Montañeses
+ED1YAV	438.700 MHz FM -7.6 MHz (RU696 - R72) - IN70EX - Grupo Radiopaquete Salamanca
+ED1YAX	438.900 MHz FM -7.6 Mhz (RU712 - R80) Subtono 77.0 Hz - IN63AK - RC Fene
+ED1YAY	438.800 MHz FM -7.6 MHz (RU704 - R76) - IN53XH - URE A Coruña
+ED1YAZ	439.225 MHz FM-N -7.6 MHz (RU738 - R93) Subtono 88.5 Hz - IN72EU - URE León
+ED1YBA	438.850 MHz FM -7.6 MHz (RU708 - R78) Subtono 71.9 Hz - IN70PP - Club de Radioaficionados Abulenses
+ED1YBD	438.975 MHz FM -7.6 MHz (RU718 - R83) Subtono 100.0 Hz IN63SD (Alto Acebo 1.174 m.) - URE Narcea
+ED1YBE	439.125 MHz FM -7.6 MHz (RU730 - R89) Subtono 88,5 Hz - IN63QL - URE Asturias
+ED1YBF	439.075 MHz FM -7.6 MHz (RU726 - R87) - IN73EK - URE Asturias
+ED1YBL-R	438.750 MHz FM -7.6 MHz (RU700 - R74) Subtono 77,0 Hz Echolink - IN62EI - URE Ourense
+ED1YBM	439.300 MHz FM -7.6 MHz (RU744 - R96) Subtono 71,9 Hz - IN81UW - URE Soria
+ED1YBO	439.175 MHz FM -7.6 MHz (RU734 - R91) - IN62RJ - URE El Bierzo
+ED1YBP	439.000 MHz FM -7.6 MHz (RU720 - R84) Subtono 77,0 Hz - IN52PO - RC Fene
+ED1YBS	438.875 MHz FM -7.6 MHz (RU710 - R79) Subtono 88.5 Hz - IN52QJ - URE Rías Baixas
+ED1YBV	439.050 MHz FM -7.6 MHz (RU724 - R86) Subtono 67 Hz - IN71PP - URE Valladolid
+ED1YCD	439.400 MHz FM -7.6 MHz (RU752 - R100) - IN82MQ - URE Miranda de Ebro
+ED1YCF	439.025 MHz FM -7.6 MHz (RU722 - R85) - IN73OJ - CT URE Asturias
+ED1ZAB	438.300 MHz FM -7.6 MHz (RU664) D-Star - IN70DW - URE Salamanca
+ED1ZAJ	438.325 MHz FM -7.6 MHz (RU666) D-Star - IN61GV - Comunicaciones Digitales de Galicia
+ED1ZAK	438.650 MHz FM -7.6 MHz (RU692 - R70) Subtono 131,8 Hz - IN82EH - Burgos HAM Radio
+ED1ZAT	438.325 MHz FM -7.6 MHz (RU666) - D-Star - IN52TQ - Radio Club Estrada - EA1RKE
+ED1ZAV	438.625 MHz - C4FM -7.6 MHz (RU690) - IN73CH - CTCA URE Asturias
+ED1ZAW	438.400 MHz -7.6 MHz (RU752) DMR - IN72JU - URE León
+ED1ZAX	438.525 MHz - 7.6 MHz (RU682) DMR - IN52PO - Radio Club Fene (EA1RKF)
+ED1ZBG	438.550 MHz -7.6 MHz (RU684) DMR - IN62EI - URE Ourense
+ED1ZBH	438.575 MHz -7.6 MHz (RU656) DMR - IN62IG - URE Ourense
+ED1ZBI	438.500 MHz -7.6 MHz (RU680) DMR - IN62CI - URE Ourense
+ED1ZBI_B	438.250 MHz -7.6 MHz (RU660) D-Star - IN62CI - URE Ourense
+ED1ZBJ	438.225 MHz -7.6 MHz (RU658) DMR - IN72FN - URE León
+ED2YAB	438.700 MHz FM -7.6 MHz (RU696 - R72) - IN83ND - R.C. Unzueta de Laudio
+ED2YAE	439.000 MHz FM -7.6 MHz (RU720 - R84) Subtono 77,0 Hz - IN83RF - URE Vizcaya
+ED2YAG	438.925 MHz FM -7.6 MHz (RU714 - R81) - IN93BH - URE San Sebastián
+ED2YAH	438.700 MHz FM -7.6MHz (RU-796 R72) - IN91SR - URE Zaragoza
+ED2YAJ	438.650 MHz FM -7.6 MHz (RU692 R70) - IN91NP - URE Zaragoza
+ED2YAL	439.325 MHz FM -7.6 MHz (RU746 - R97) - IN90LC - Subtono 71,9 Hz URE Teruel
+ED2YAN	438.200 MHz FM -7.6 MHz (RU656) D-Star - IN83PI - As. Euskobite Elkarte
+ED2YAO	438.950 MHz FM -7.6 MHz (RU716 - R82) IN83MF As. Euskobyte Elkarte
+ED2YAP	438.675 MHz FM -7.6 MHz (RU694) D-Star - IN82QU - RC Foronda
+ED2YAX	439.000 MHz FM -7.6 MHz (RU720 - R84) Subtono 123,0 Hz JN01EM RadioClub Fragatí
+ED2ZAA	438.350 MHz D-Star -7.6 MHz (RU668) - IN91NP - URE Zaragoza
+ED3YAB	439.425 MHz FM -7.6 MHz (RU754 - R101) Subtono 88,5 Hz - JN01VO - AMIRED
+ED3YAC	438.800 MHz FM -7.6 MHz (RU704 - R76) Subtono 110,9 Hz - JN11AQ - R.C. Castellar
+ED3YAD	438.975 MHz FM -7.6 MHz (RU718 - R83) - JN11BN - Radio Club Sabadell
+ED3YAE	438.675 MHz FM -7.6 MHz (RU694 - R71) - JN01SU - Asociación de Radioaficionados Solsonés
+ED3YAH	439.275 MHz FM -7.6 MHz (RU742 - R95) Subtono 88,5 Hz - JN00ET - AMIRED
+ED3YAI	439.375 MHz FM -7.6 MHz (RU750 - R99) Subtono 88,5 Hz - JN02WH - AMIRED
+ED3YAM	438.775 MHz FM -7.6 MHz (RU702 - R75) Subtono 88,5 Hz - JN11EW - URE Osona
+ED3YAN	439.125 MHz FM -7.6 MHz (RU730 - R89) Subtono 114,8 Hz - JN11BJ - URE Barcelona
+ED3YAO	438.875 MHz FM -7.6 MHz (RU710 - R79) Subtono 123,0 - JN11BI - R.C. Quijotes Internacionales
+ED3YAP	438.900 MHz FM -7.6 MHz (RU712-R80) Subtono 107,2 - JN12LG - Sección URE Alt Empordá
+ED3YAS	438.950 MHz FM -7.6 MHz (RU716 - R82) - JN11JP - URE La Selva
+ED3YAT	438.925 MHz FM -7.6 MHz (RU714 - R81) Subtono 79,7 Hz - JN11CK - URE Badalona
+ED3YAV	438.750 MHz FM -7.6 MHz (RU700 - R74) - JN02JA - R.C. Lleida
+ED3YBC	438.700 MHz FM -7.6 MHz (RU696 - R72) - JN11MU - URE Baix Empordá
+ED3YBH	438.725 MHz FM -7.6 MHz (RU698 - R73) Subtono 77,0 Hz - JN02VC - Associació de Radioaficionats Club La Baells
+ED4YAA	438.700 MHz FM -7.6 MHz (RU696 - R72) - IM89EF Subtono 77.0 Hz URE Ciudad Real
+ED4YAB	438.650 MHz FM -7.6 MHz (RU692 - R70) - IN80CH - URE Leganés
+ED4YAF	439.025 MHz FM -7.6 MHz (RU722 - R85) - IN90CE - URE Cuenca
+ED4YAI	439.300 MHz FM -7.6 MHz (RU744 - R96) - IN79VA - URE Ciudad Real
+ED4YAJ	439.000 MHz FM -7.6 MHz (RU720 - R84) Subtono 67,0 Hz - IN80HK - Sección URE Jarama
+ED4YAK	439.200 MHz FM -7.6 MHz (RU736 - R92) Subtono: 82.5Hz - IN80FK - Radio Club Henares
+ED4YAN	438.950 MHz -7.6 MHz (RU-716 - R82) Subtono: 100 Hz - IN80AS - URE Sección Local de Madrid
+ED4YAQ	439.200 MHz FM -7.6 MHz (RU738 - R93) Subtono 88,5 Hz - IM69WF - RC Francisco de Orellana
+ED4YAR	439.300 MHz FM -7.6 MHz (RU744 - R96) Subtono 88,5 Hz - IM79GA - RC Francisco de Orellana
+ED4YAU	439.425 MHz FM -7.6 MHz (RU754 - R101) - IN80WC - URE Cuenca
+ED4YAV	438.750 MHz FM -7.6 MHz (RU700 - R74) Subtono 67,0 Hz - IN70PD - URE Talavera de la Reina
+ED4YAW	438.900 MHz FM -7.6 MHz (RU712 - R80) - IN70WR - URE Sierra de Guadarrama
+ED4YAY	438.725 MHz FM -7.6 MHz - (RU698 - R73) - APRS: 144.800 - IM79XU - URE Toledo
+ED4ZAA	438.475 MHz FM -7.6 MHz (RU666) DMR - APRS: 144.800 - IN80EV URE Alcorcón
+ED4ZAB	438.325 MHz FM -7.6 MHz DMR - APRS: 144.800 - IM79DR - URE Alcorcón
+ED4ZAD	438.375 MHz FM -7.6 MHz (RU670) D-Star - IN80WC - URE Cuenca
+ED4ZAG	438.300 MHz (-7.600 kHz)-(RU664) DMR - RED BRANDMEISTER - 10 W potencia - IN80DH - URE Alcorcón
+ED4ZAH	438.350 MHz (-7.600 kHz)-(RU668) - D-Star - 10 W potencia - IN70WR - URE Sierra de Guadarrama
+ED4ZAH	438.325 MHz (-7.600 kHz)-(RU666) DMR - RED BRANDMEISTER - 8 W potencia - IN70WR - URE Sierra de Guadarrama
+ED4ZAH	438.375 MHz (-7.600 kHz)-(RU670) - C4FM - 8 W potencia - IN70WR - URE Sierra de Guadarrama
+ED4ZAL	438.475 MHz (-7.600 kHz)- (RU666) - Repetidor Digital DMR conectado a Brandmaister - IM68SU - URE Mérida
+ED5YAA	439.100 MHz FM -7.6 MHz (RU728 - R88) - IM88TP - Unión de Radioaficionados de Albacete
+ED5YAD	438.800 MHz FM -7.6 MHz (RU704 - R76) - JM08BU - R.C. Montgó
+ED5YAE	438.725 MHz FM -7.6 MHz (RU698 - R73) Subtono 79.7 Hz - IM98WR - URE Marina Baixa
+ED5YAF	439.000 MHz FM -7.6 MHz (R720 - R84) Subtono 77.0 Hz - IM98OL - URE Elda
+ED5YAG	439.400 MHz FM -7.6 MHz (RU752 - R100) Subtono 114.8 Hz IM98SI URE Alicante
+ED5YAJ	439.425 MHz FM -7.6 MHz (RU754 - R101) Subtono 88.5 Hz - Echolink - IM99TQ - URE Valencia
+ED5YAL	438.650 MHz FM -7.6 MHz (RU692 - R70) Subtono 77,0 Hz - IM97FU - URE Murcia
+ED5YAM	439.050 MHz FM -7.6 MHz (RU724 - R86) - IM98WR - RC Montgó
+ED5YAS	438.825 MHz FM -7.6 MHz (RU706 - R77) Subtono 71.9 Hz - JN00BO - URE Maestrazgo
+ED5YAU	438.700 MHz FM -7.6 MHz (RU696 - R72) - IN98WM - URE Benidorm-Marina Baixa
+ED5YAV	439.075 MHz FM -7.6 MHz (RU726 - R87) - JM08BT - RC Montgó
+ED5YAY	438.775 MHz FM -7.6 MHz (RU702 - R75) Subtono 77,0 Hz - IM99NJ - URE Oeste de Valencia
+ED5YBA	439.150 MHz FM -7.6 MHz (RU732 - R90) Subtono: 77Hz - IM98TK - Radioclub El Campello - EA5RCK
+ED5YBC	438.875 FM -7.6 MHz (RU-710) Subtono 77.0 Hz - IM98RJ - URE San Vicente del Raspeig
+ED5ZAB	438.200 MHz -7.6 MHz (RU656) - D-Star IM99TQ URE Valencia
+ED5ZAB	438.350 MHz -7.6 MHz (RU668) - C4FM IM99TQ URE Valencia
+ED5ZAB	438.425 MHz -7.6 MHz (RU674) - DMR IM99TQ URE Valencia
+ED5ZAC	438.300 MHz FM -7.6 MHz (RU664) D-Star - JM08BU - RC Denia
+ED6YAH	439.200 MHz FM -7.6 MHz (RU736 - R92) - JM19LM - URE Pla de Mallorca
+ED6ZAA	438.250 MHz FM -7.6 MHz (RU660) D-Star - JM19OK - URE Pla de Mallorca
+ED6ZAB	438.450 MHz FM -7.6 MHz (RU676) D-Star - JM19KM - URE Pla de Mallorca
+ED7YAB	439.425 MHz FM -7.6 MHz (RU754 - R101) Subtono 77,0 Hz - IM77OX - URE Córdoba
+ED7YAE	438.650 MHz FM -7.6 MHz (RU692 - R70) Subtono 82.5 Hz - IM76QO - URE Málaga - https://www.ea7urm.com
+ED7YAL	438.650 MHz FM -7.6 MHz (RU692 - R70) Subtono 71,9 Hz - IM87FR - URE Jaen
+ED7YAM	438.925 MHz FM -7.6 MHz (RU714 - R81) - IM77OX - URE Córdoba
+ED7YAN	438.900 MHz FM -7.6 MHz (RU720 - R84) Subtono: 88.5Hz - IM87HB - URE Granada
+ED7YAR	439.400 MHz FM -7.6 MHz (RU752 - R100) - IM77EU - Radio Club Sevilla
+ED7YAU	439.350 MHz FM -7.6 MHz (RU748 - R98) - IM76AT - URE San Fernando
+ED7YAV	438.950 MHz -7.6 MHz (RU716 - R82) Subtono 77.0Hz - Antena omnidireccional - IM66VM - URE San Fernando
+ED7YAW	438.850 MHz -7.6 MHz (RU708 - R78) Subtono 100Hz IM86OV - Asociación Radioaficionados Poniente Almería
+ED7YBC	439.025 MHz FM -7.6 MHz (RU722) - Subtono: 88.5Hz - IM78CB - URE Sevilla
+ED7ZAD	438.525 MHz FM -7.6 MHz (RU682) D-Star - IM77OW - URE Córdoba
+ED7ZAE	438.300 MHz -7.6 MHz (RU664) Repetidor Digital D-Star - IM87ED - URE Granada
+ED7ZAF	438.300 MHz -7.6 MHz (RU664) DMR IM86OS - Asociación Radioaficionados Poniente Almería
+ED7ZAH	438.425 MHz -7.6 MHz Repetidor Digital DMR - ID-214710 - IM86SU - URE Almería
+ED7ZAI	439.000 MHz -7.6 MHz (RU720) Subtono 88,5 Hz - IM77AJ - URE Sevilla
+ED7ZAJ	438.300 MHz -7.6 MHz (RU656) Repetidor Digital D-Star - IM76AT - URE San Fernando
+ED7ZAL	438.425 MHz -7.6 MHz - Repetidor Digital DMR - Colorcode 1 - IM67XI - URE Sevilla
+ED7ZAM	438.500 MHz -7.6 MHz (RU680) Repetidor Digital C4FM - IM66WM - URE San Fernando
+ED8YAB	439.000 MHz FM -7.6 MHz (RU-720 - R84) Subtono 79,7 - IL18CP - Unión Radioaficionados Aridane
+ED8YAM	438.800 MHz FM -7.6 MHz (RU704 - R76) Subtono 79,7 Hz - IL28ED - URE Las Palmas
+ED8YAN	439.150 MHz FM -7.6 MHz (RU732 - R90) Subtono 79,7 Hz - IL18SI - URE Valle de la Orotava
+ED8YAO	439.300 MHz FM -7.6 MHz (RU744 - R96) Subtono 79,7 Hz - IL18QJ - URE Valle de la Orotava
+ED8ZAB	438.4625 MHz FM -7.6 MHz (RU677) D-Star - IL27FX - RC Tuhoco de Velhoco
+ED9YAB	438.675 MHz -7.6 MHz (RU694 - R71) Subtono: 82.5Hz - IM75IV - URE Sección Ceuta

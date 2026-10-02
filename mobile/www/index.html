@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#23272B">
+<title>BricoHams RT-950 Programmer</title>
+<link rel="icon" href="img/icon_64.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="brand">
+  <img src="img/bricohams_logo.svg" alt="BricoHams">
+  <div class="ttl"><b>RT-950</b> <span data-t="programmer">Programador</span></div>
+  <button id="langbtn" class="chip">EN</button>
+</header>
+
+<div id="status" class="status"><span id="statusText" data-t="disconnected">Sin conectar</span><progress id="prog" max="100" value="0" hidden></progress></div>
+
+<main>
+  <!-- RADIO -->
+  <section id="tab-radio" class="tab on">
+    <div class="card">
+      <h2 data-t="connect">Conectar con la radio</h2>
+      <p class="muted" data-t="connect_help">Enciende la radio con el Bluetooth activado (menú de la radio) o conecta el cable de programación.</p>
+      <div class="row">
+        <button id="btnBle" class="primary" data-t="bluetooth">Bluetooth</button>
+        <button id="btnSerial" data-t="cable">Cable USB</button>
+      </div>
+      <p id="support" class="warn" hidden></p>
+    </div>
+    <div class="card">
+      <h2 data-t="codeplug">Configuración</h2>
+      <div class="row">
+        <button id="btnRead" class="primary" data-t="read">Leer de la radio</button>
+        <button id="btnWrite" data-t="write">Escribir en la radio</button>
+      </div>
+      <p id="cpinfo" class="muted"></p>
+      <p class="muted small" data-t="write_help">Antes de escribir se lee la radio y se guarda una copia. Solo se envían los bloques que cambian y cada bloque se verifica.</p>
+    </div>
+    <pre id="log" class="log"></pre>
+  </section>
+
+  <!-- CHANNELS -->
+  <section id="tab-channels" class="tab">
+    <div class="toolbar">
+      <select id="zoneSel"></select>
+      <input id="search" type="search" placeholder="Buscar" data-tp="search">
+      <button id="btnAdd" class="primary small" data-t="add">Añadir</button>
+    </div>
+    <ul id="chList" class="list"></ul>
+  </section>
+
+  <!-- ZONES -->
+  <section id="tab-zones" class="tab">
+    <div class="card"><h2 data-t="zones">Zonas</h2><div id="zoneEdit"></div></div>
+  </section>
+
+  <!-- COUNTRY -->
+  <section id="tab-country" class="tab">
+    <div class="card">
+      <h2 data-t="country">Codeplug por país</h2>
+      <select id="ctySel"></select>
+      <p id="ctyDesc" class="muted small"></p>
+      <label><input type="radio" name="mode" value="overwrite" checked> <span data-t="mode_over">Sobrescribir: sustituir todos los canales (radio nueva)</span></label>
+      <label><input type="radio" name="mode" value="append"> <span data-t="mode_add">Añadir: conservar mis canales y rellenar huecos</span></label>
+      <label><input type="checkbox" id="ctyRename" checked> <span data-t="rename">Renombrar las zonas</span></label>
+      <div id="ctyKinds"></div>
+      <label><span data-t="locator">Mi locator</span> <input id="ctyLoc" size="8" placeholder="IM98IB"></label>
+      <div class="row"><button id="btnCtyPrev" data-t="preview">Vista previa</button><button id="btnCtyApply" class="primary" data-t="apply">Aplicar</button></div>
+      <pre id="ctyOut" class="log small"></pre>
+      <p class="warn small" data-t="cty_hint">Radio ya configurada: primero Leer, luego Añadir y después Escribir. Solo se escriben canales y nombres de zona. Aeronáutica, PMR446 y CB quedan solo en recepción.</p>
+    </div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section id="tab-settings" class="tab">
+    <div class="toolbar"><select id="grpSel"></select><input id="setSearch" type="search" placeholder="Buscar" data-tp="search"></div>
+    <div id="settings" class="card"></div>
+  </section>
+
+  <!-- FILES -->
+  <section id="tab-files" class="tab">
+    <div class="card">
+      <h2 data-t="files">Ficheros</h2>
+      <div class="row wrap">
+        <label class="button"><input type="file" id="openFile" accept=".rt950,.json" hidden><span data-t="open">Abrir .rt950</span></label>
+        <button id="btnSave" data-t="save">Guardar .rt950</button>
+        <button id="btnChirp" data-t="chirp">Exportar CSV de CHIRP</button>
+        <button id="btnNew" data-t="new">Nuevo</button>
+      </div>
+      <p class="muted small" data-t="files_help">Los ficheros .rt950 son los mismos que usa BricoHams RT-950 Toolkit en Windows y Linux.</p>
+    </div>
+    <div class="card">
+      <h2 data-t="backups">Copias de seguridad</h2>
+      <ul id="bkList" class="list compact"></ul>
+    </div>
+  </section>
+
+  <!-- HELP -->
+  <section id="tab-help" class="tab">
+    <div class="card"><h2 data-t="help">Ayuda</h2><div id="helpBody"></div></div>
+    <div class="card"><h2 data-t="backupguide">Copias de seguridad</h2><div id="backupBody"></div></div>
+    <div class="card"><h2 data-t="disclaimer">Aviso de responsabilidad</h2><div id="disclaimerBody"></div></div>
+    <div class="card small muted" id="about"></div>
+  </section>
+</main>
+
+<nav class="tabs">
+  <button data-tab="radio" class="on"><span>📡</span><b data-t="t_radio">Radio</b></button>
+  <button data-tab="channels"><span>☰</span><b data-t="t_channels">Canales</b></button>
+  <button data-tab="zones"><span>▦</span><b data-t="t_zones">Zonas</b></button>
+  <button data-tab="country"><span>⚑</span><b data-t="t_country">País</b></button>
+  <button data-tab="settings"><span>⚙</span><b data-t="t_settings">Ajustes</b></button>
+  <button data-tab="files"><span>🗎</span><b data-t="t_files">Ficheros</b></button>
+  <button data-tab="help"><span>?</span><b data-t="t_help">Ayuda</b></button>
+</nav>
+
+<dialog id="chDlg">
+  <form method="dialog" id="chForm">
+    <h3 id="chTitle"></h3>
+    <div class="grid2">
+      <label><span data-t="name">Nombre</span><input name="name" maxlength="12"></label>
+      <label><span>RX MHz</span><input name="rx" inputmode="decimal"></label>
+      <label><span>TX MHz</span><input name="tx" inputmode="decimal"></label>
+      <label><span data-t="rxtone">Tono RX</span><select name="rxTone"></select></label>
+      <label><span data-t="txtone">Tono TX</span><select name="txTone"></select></label>
+      <label><span data-t="power">Potencia</span><select name="power"></select></label>
+      <label><span data-t="bw">Ancho</span><select name="bandwidth"></select></label>
+      <label><span data-t="mod">Modo RX</span><select name="rxAm"><option>FM</option><option>AM</option></select></label>
+      <label><span data-t="txen">TX permitida</span><select name="txEnable"><option>ON</option><option>OFF</option></select></label>
+      <label><span data-t="scan">Escaneo</span><select name="scanAdd"><option>ON</option><option>OFF</option></select></label>
+      <label><span data-t="busy">Bloqueo ocupado</span><select name="busyLock"><option>OFF</option><option>ON</option></select></label>
+      <label><span>PTT-ID</span><select name="pttId"></select></label>
+    </div>
+    <div class="row end">
+      <button value="delete" class="danger" data-t="delete">Borrar</button>
+      <button value="cancel" data-t="cancel">Cancelar</button>
+      <button value="ok" class="primary" data-t="ok">Aceptar</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="discDlg">
+  <div id="discText"></div>
+  <div class="row end"><button id="discNo" data-t="exit">Salir</button><button id="discYes" class="primary" data-t="accept">Entiendo y acepto</button></div>
+</dialog>
+
+<script src="js/core.js"></script>
+<script src="js/transport.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

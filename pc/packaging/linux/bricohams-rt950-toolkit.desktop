@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=BricoHams RT-950 Toolkit
+GenericName=Radio programmer
+GenericName[es]=Programador de radio
+Comment=Codeplug editor, country codeplugs, firmware and satellites for the Radtel RT-950 / RT-950 Pro
+Comment[es]=Editor de configuración, codeplugs por país, firmware y satélites para Radtel RT-950 / RT-950 Pro
+Exec=bricohams-rt950-toolkit
+Icon=bricohams-rt950-toolkit
+Terminal=false
+Categories=HamRadio;Utility;
+Keywords=Radtel;RT-950;codeplug;ham;radio;CHIRP;
